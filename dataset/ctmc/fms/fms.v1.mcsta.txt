@@ -1,0 +1,34 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+fms.v1.jani:model: info: fms is a CTMC model.
+fms.v1.jani: info: Need 24 bytes per state.
+fms.v1.jani: info: Explored 54 states.
+
+Peak memory usage: 54 MB
+Analysis results for fms.v1.jani
+
++ State space exploration
+  State size:  24 bytes
+  States:      54
+  Transitions: 54
+  Branches:    155
+  Rate:        1227 states/s
+  Time:        0.1 s
+
++ Property productivity
+  Value: 39.62729139828299
+  Time:  0.2 s
+
+  + LongRunAverage
+    Time:                   0.0948617
+    Max. end components:    1
+    Max. exit rate:         2
+    Min. exit rate:         0.03333333333333333
+    Avg. exit rate:         0.9212962962962957
+    Max number of actions:  0
+    Min number of actions:  2147483647
+    Avg. number of actions: 0
+

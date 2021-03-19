@@ -1,0 +1,15 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+breakdown-queues.v2.jani:model: info: breakdown-queues is an MA model and will be simulated as an MA.
+breakdown-queues.v2.jani: info: Using default value of 0.95 for the confidence parameter.
+breakdown-queues.v2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+breakdown-queues.v2.jani:model: error: Encountered structural nondeterminism between rs?/rs!, r1?/r1! and r2?/r2!.
+
+Peak memory usage: 56 MB
+Analysis results for breakdown-queues.v2.jani
+Status:          Error
+Simulation time: 0.1 s
+

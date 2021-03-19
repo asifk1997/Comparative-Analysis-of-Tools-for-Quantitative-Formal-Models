@@ -1,0 +1,7 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+herman.3.v1.jani:model: info: herman.3 is a DTMC model.
+herman.3.v1.jani:variables[: error: Complex initial states specifications are not yet supported.

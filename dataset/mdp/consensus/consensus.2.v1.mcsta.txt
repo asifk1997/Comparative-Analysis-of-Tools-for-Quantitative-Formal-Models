@@ -1,0 +1,84 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+consensus.2.v1.jani:model: info: consensus.2 is an MDP model.
+consensus.2.v1.jani:variables[6]: info: Expanding variable "pc1" into 4 locations in automaton "process1".
+consensus.2.v1.jani:variables[8]: info: Expanding variable "pc2" into 4 locations in automaton "process2".
+consensus.2.v1.jani: info: Need 8 bytes per state.
+consensus.2.v1.jani: info: Explored 2064 states.
+consensus.2.v1.jani:properties[4]: warning: Computing minimum expected reward in property "steps_min" without checking for zero-reward end components.
+
+Peak memory usage: 53 MB
+Analysis results for consensus.2.v1.jani
+
++ State space exploration
+  State size:  8 bytes
+  States:      2064
+  Transitions: 3088
+  Branches:    3852
+  Rate:        33290 states/s
+  Time:        0.1 s
+
++ Property c1
+  Result:      True
+  Time:        0.1 s
+  Probability: 1
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          2064
+    Time for min. prob. 1 states: 0.0 s
+
++ Property c2
+  Probability: 0.48425770065929424
+  Bounds:      [0.48425770065929424, 1]
+  Time:        0.4 s
+
+  + Value iteration
+    Final error: 9.996836668998696E-07
+    Iterations:  3551
+    Time:        0.4 s
+
++ Property disagree
+  Probability: 0.015618128841683279
+  Bounds:      [0.015618128841683279, 1]
+  Time:        0.4 s
+
+  + Value iteration
+    Final error: 9.979999813845246E-07
+    Iterations:  4414
+    Time:        0.4 s
+
++ Property steps_max
+  Value:  3265.5705739397795
+  Bounds: [3265.5705739397795, infinity)
+  Time:   0.5 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          2064
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 9.980268132750682E-07
+    Iterations:  3420
+    Time:        0.3 s
+
++ Property steps_min
+  Value:  3070.7509988960505
+  Bounds: [3070.7509988960505, infinity)
+  Time:   0.4 s
+
+  + Precomputations
+    Max. prob. 1 states:          2064
+    Time for max. prob. 1 states: 0.1 s
+
+  + Value iteration
+    Final error: 9.982110001168773E-07
+    Iterations:  3247
+    Time:        0.3 s
+

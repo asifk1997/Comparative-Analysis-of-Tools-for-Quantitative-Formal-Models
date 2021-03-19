@@ -1,0 +1,58 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+bitcoin-attack.v1.jani:model: info: bitcoin-attack is an MA model.
+bitcoin-attack.v1.jani: info: Need 8 bytes per state.
+bitcoin-attack.v1.jani: info: Explored 177 states.
+bitcoin-attack.v1.jani:properties[0]: warning: Computing minimum expected reward in property "T_MWinMin" without checking for zero-reward end components.
+bitcoin-attack.v1.jani: info: Identified 172 maximal end components.
+
+Peak memory usage: 53 MB
+Analysis results for bitcoin-attack.v1.jani
+
++ State space exploration
+  State size:  8 bytes
+  States:      177
+  Transitions: 227
+  Branches:    284
+  Rate:        3848 states/s
+  Time:        0.1 s
+
++ Property T_MWinMin
+  Value:  3736.047846725833
+  Bounds: [3736.047846725833, infinity)
+  Time:   0.2 s
+
+  + Precomputations
+    Max. prob. 1 states:          177
+    Time for max. prob. 1 states: 0.1 s
+
+  + Value iteration
+    Final error: 9.948542768988446E-07
+    Iterations:  1352
+    Time:        0.0 s
+
++ Property P_MWinMax
+  Probability: 0.5351007861781778
+  Bounds:      [0.5348195964501377, 0.535381975906218]
+  Time:        0.4 s
+
+  + Precomputations
+    Max. prob. 0 states:          0
+    Time for max. prob. 0 states: 0.0 s
+
+  + End components
+    Iterations:  2
+    MECs:        172
+    Transitions: 222
+    Branches:    279
+    Time:        0.1 s
+
+  + Unif+
+    Time:             0.2 s
+    Max. exit rate:   0.08333333333333333
+    Iterations:       1
+    Final unif. rate: 0.08333333333333333
+

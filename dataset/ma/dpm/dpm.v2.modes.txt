@@ -1,0 +1,17 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+dpm.v2.jani:model: info: dpm is an MA model and will be simulated as an MA.
+dpm.v2.jani: info: Using default value of 0.95 for the confidence parameter.
+dpm.v2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+dpm.v2.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+dpm.v2.jani:properties[6]: warning: Ignoring property "SmaxQueuesFull" because the transient or evaluation duration for long-run average value simulation is not configured.
+dpm.v2.jani:model: error: Encountered structural nondeterminism between standby?/standby! and idle?/idle!.
+
+Peak memory usage: 56 MB
+Analysis results for dpm.v2.jani
+Status:          Error
+Simulation time: 0.1 s
+

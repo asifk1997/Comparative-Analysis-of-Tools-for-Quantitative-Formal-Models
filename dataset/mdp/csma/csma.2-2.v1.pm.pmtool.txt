@@ -1,0 +1,280 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:27 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/mdp/csma/csma.2-2.v1.prism /home/asif/dataset/mdp/csma/csma.v1.props -extrareachinfo
+
+Parsing model file "/home/asif/dataset/mdp/csma/csma.2-2.v1.prism"...
+
+Type:        MDP
+Modules:     bus station1 station2 
+Variables:   b y1 y2 s1 x1 bc1 cd1 s2 x2 bc2 cd2 
+
+Parsing properties file "/home/asif/dataset/mdp/csma/csma.v1.props"...
+
+5 properties:
+(1) "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+(2) "all_before_min": Pmin=? [ !"collision_max_backoff" U "all_delivered" ]
+(3) "some_before": Pmin=? [ F min_backoff_after_success<K ]
+(4) "time_max": R{"time"}max=? [ F "all_delivered" ]
+(5) "time_min": R{"time"}min=? [ F "all_delivered" ]
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_max": Pmax=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Building model...
+
+Computing reachable states...
+Iteration 1: 1 states (32 nodes) (0.00 seconds)
+Iteration 2: 3 states (51 nodes) (0.00 seconds)
+Iteration 3: 4 states (59 nodes) (0.00 seconds)
+Iteration 4: 6 states (103 nodes) (0.00 seconds)
+Iteration 5: 10 states (120 nodes) (0.00 seconds)
+Iteration 6: 14 states (115 nodes) (0.00 seconds)
+Iteration 7: 18 states (126 nodes) (0.00 seconds)
+Iteration 8: 22 states (137 nodes) (0.00 seconds)
+Iteration 9: 26 states (158 nodes) (0.00 seconds)
+Iteration 10: 29 states (201 nodes) (0.00 seconds)
+Iteration 11: 33 states (248 nodes) (0.00 seconds)
+Iteration 12: 43 states (268 nodes) (0.00 seconds)
+Iteration 13: 67 states (268 nodes) (0.00 seconds)
+Iteration 14: 91 states (291 nodes) (0.00 seconds)
+Iteration 15: 115 states (314 nodes) (0.00 seconds)
+Iteration 16: 131 states (353 nodes) (0.00 seconds)
+Iteration 17: 152 states (388 nodes) (0.00 seconds)
+Iteration 18: 167 states (409 nodes) (0.00 seconds)
+Iteration 19: 187 states (435 nodes) (0.00 seconds)
+Iteration 20: 207 states (453 nodes) (0.00 seconds)
+Iteration 21: 229 states (453 nodes) (0.00 seconds)
+Iteration 22: 251 states (439 nodes) (0.00 seconds)
+Iteration 23: 273 states (417 nodes) (0.00 seconds)
+Iteration 24: 295 states (390 nodes) (0.00 seconds)
+Iteration 25: 311 states (394 nodes) (0.00 seconds)
+Iteration 26: 327 states (425 nodes) (0.00 seconds)
+Iteration 27: 349 states (438 nodes) (0.00 seconds)
+Iteration 28: 371 states (455 nodes) (0.00 seconds)
+Iteration 29: 393 states (460 nodes) (0.00 seconds)
+Iteration 30: 415 states (465 nodes) (0.00 seconds)
+Iteration 31: 437 states (461 nodes) (0.00 seconds)
+Iteration 32: 459 states (443 nodes) (0.00 seconds)
+Iteration 33: 481 states (420 nodes) (0.00 seconds)
+Iteration 34: 503 states (395 nodes) (0.00 seconds)
+Iteration 35: 519 states (398 nodes) (0.00 seconds)
+Iteration 36: 535 states (429 nodes) (0.00 seconds)
+Iteration 37: 557 states (442 nodes) (0.00 seconds)
+Iteration 38: 579 states (459 nodes) (0.00 seconds)
+Iteration 39: 601 states (463 nodes) (0.00 seconds)
+Iteration 40: 623 states (469 nodes) (0.00 seconds)
+Iteration 41: 645 states (462 nodes) (0.00 seconds)
+Iteration 42: 667 states (445 nodes) (0.00 seconds)
+Iteration 43: 689 states (420 nodes) (0.00 seconds)
+Iteration 44: 711 states (395 nodes) (0.00 seconds)
+Iteration 45: 727 states (398 nodes) (0.00 seconds)
+Iteration 46: 743 states (429 nodes) (0.00 seconds)
+Iteration 47: 765 states (442 nodes) (0.00 seconds)
+Iteration 48: 789 states (455 nodes) (0.00 seconds)
+Iteration 49: 815 states (477 nodes) (0.00 seconds)
+Iteration 50: 841 states (483 nodes) (0.00 seconds)
+Iteration 51: 855 states (495 nodes) (0.00 seconds)
+Iteration 52: 871 states (484 nodes) (0.00 seconds)
+Iteration 53: 883 states (494 nodes) (0.00 seconds)
+Iteration 54: 903 states (477 nodes) (0.00 seconds)
+Iteration 55: 921 states (464 nodes) (0.00 seconds)
+Iteration 56: 933 states (471 nodes) (0.00 seconds)
+Iteration 57: 937 states (477 nodes) (0.00 seconds)
+Iteration 58: 941 states (485 nodes) (0.00 seconds)
+Iteration 59: 945 states (487 nodes) (0.00 seconds)
+Iteration 60: 949 states (485 nodes) (0.00 seconds)
+Iteration 61: 953 states (483 nodes) (0.00 seconds)
+Iteration 62: 957 states (485 nodes) (0.00 seconds)
+Iteration 63: 961 states (487 nodes) (0.00 seconds)
+Iteration 64: 965 states (484 nodes) (0.00 seconds)
+Iteration 65: 969 states (484 nodes) (0.00 seconds)
+Iteration 66: 973 states (488 nodes) (0.00 seconds)
+Iteration 67: 977 states (489 nodes) (0.00 seconds)
+Iteration 68: 981 states (487 nodes) (0.00 seconds)
+Iteration 69: 985 states (483 nodes) (0.00 seconds)
+Iteration 70: 989 states (485 nodes) (0.00 seconds)
+Iteration 71: 993 states (488 nodes) (0.00 seconds)
+Iteration 72: 997 states (485 nodes) (0.00 seconds)
+Iteration 73: 1001 states (484 nodes) (0.00 seconds)
+Iteration 74: 1005 states (487 nodes) (0.00 seconds)
+Iteration 75: 1009 states (488 nodes) (0.00 seconds)
+Iteration 76: 1013 states (486 nodes) (0.00 seconds)
+Iteration 77: 1017 states (481 nodes) (0.00 seconds)
+Iteration 78: 1021 states (479 nodes) (0.00 seconds)
+Iteration 79: 1025 states (476 nodes) (0.00 seconds)
+Iteration 80: 1029 states (479 nodes) (0.00 seconds)
+Iteration 81: 1031 states (477 nodes) (0.00 seconds)
+Iteration 82: 1033 states (477 nodes) (0.00 seconds)
+Iteration 83: 1035 states (472 nodes) (0.00 seconds)
+Iteration 84: 1037 states (460 nodes) (0.00 seconds)
+Iteration 85: 1038 states (458 nodes) (0.00 seconds)
+
+Reachability (BFS): 85 iterations in 0.04 seconds (average 0.000424, setup 0.00)
+
+Time for model construction: 0.059 seconds.
+
+Type:        MDP
+States:      1038 (1 initial)
+Transitions: 1282
+Choices:     1054
+
+Transition matrix: 2120 nodes (4 terminal), 1282 minterms, vars: 30r/30c/9nd
+
+Prob0A: 82 iterations in 0.03 seconds (average 0.000354, setup 0.00)
+
+Prob1E: 241 iterations in 0.09 seconds (average 0.000365, setup 0.00)
+
+yes = 993, no = 16, maybe = 29
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=30, nodes=962] [45.1 KB]
+Adding sparse bits... [levels=30-30, num=6, compact=6/6] [6.4 KB]
+Creating vector for yes... [dist=2, compact] [2.0 KB]
+Allocating iteration vectors... [3 x 8.1 KB]
+TOTAL: [77.9 KB]
+
+Starting iterations...
+
+Iterative method: 15 iterations in 0.00 seconds (average 0.000067, setup 0.00)
+
+Value in the initial state: 0.875
+
+Time for model checking: 0.122 seconds.
+
+Result: 0.875 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "all_before_min": Pmin=? [ !"collision_max_backoff" U "all_delivered" ]
+
+Prob0E: 87 iterations in 0.02 seconds (average 0.000264, setup 0.00)
+
+Prob1A: 13 iterations in 0.00 seconds (average 0.000308, setup 0.00)
+
+yes = 993, no = 16, maybe = 29
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=30, nodes=962] [45.1 KB]
+Adding sparse bits... [levels=30-30, num=6, compact=6/6] [6.4 KB]
+Creating vector for yes... [dist=2, compact] [2.0 KB]
+Allocating iteration vectors... [3 x 8.1 KB]
+TOTAL: [77.9 KB]
+
+Starting iterations...
+
+Iterative method: 17 iterations in 0.00 seconds (average 0.000059, setup 0.00)
+
+Value in the initial state: 0.875
+
+Time for model checking: 0.029 seconds.
+
+Result: 0.875 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "some_before": Pmin=? [ F min_backoff_after_success<K ]
+
+Prob0E: 49 iterations in 0.02 seconds (average 0.000449, setup 0.00)
+
+Prob1A: 6 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+yes = 476, no = 552, maybe = 10
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=6, levels=30, nodes=522] [24.5 KB]
+Adding sparse bits... [levels=30-30, num=6, compact=6/6] [6.2 KB]
+Creating vector for yes... [dist=2, compact] [2.0 KB]
+Allocating iteration vectors... [3 x 8.1 KB]
+TOTAL: [57.0 KB]
+
+Starting iterations...
+
+Iterative method: 7 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.5
+
+Time for model checking: 0.027 seconds.
+
+Result: 0.5 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "time_max": R{"time"}max=? [ F "all_delivered" ]
+
+Prob0E: 91 iterations in 0.02 seconds (average 0.000187, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.001000, setup 0.00)
+
+goal = 3, inf = 0, maybe = 1035
+
+Computing remaining rewards...
+Switching engine since hybrid engine does yet support this computation...
+Engine: Sparse
+
+Building sparse matrix (transitions)... [n=1038, nc=1051, nnz=1279, k=2] [23.1 KB]
+Building sparse matrix (transition rewards)... [n=1038, nc=1051, nnz=841, k=2] [18.0 KB]
+Creating vector for state rewards... [8.1 KB]
+Creating vector for inf... [8.1 KB]
+Allocating iteration vectors... [2 x 8.1 KB]
+TOTAL: [73.6 KB]
+
+Starting iterations...
+
+Iterative method: 170 iterations in 0.01 seconds (average 0.000024, setup 0.00)
+
+Value in the initial state: 70.66544333833558
+
+Time for model checking: 0.026 seconds.
+
+Result: 70.66544333833558 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "time_min": R{"time"}min=? [ F "all_delivered" ]
+
+Prob0A: 86 iterations in 0.01 seconds (average 0.000163, setup 0.00)
+
+Prob1E: 87 iterations in 0.03 seconds (average 0.000322, setup 0.00)
+
+Warning: PRISM hasn't checked for zero-reward loops.
+Your minimum rewards may be too low...
+
+goal = 3, inf = 0, maybe = 1035
+
+Computing remaining rewards...
+Switching engine since hybrid engine does yet support this computation...
+Engine: Sparse
+
+Building sparse matrix (transitions)... [n=1038, nc=1051, nnz=1279, k=2] [23.1 KB]
+Building sparse matrix (transition rewards)... [n=1038, nc=1051, nnz=841, k=2] [18.0 KB]
+Creating vector for state rewards... [8.1 KB]
+Creating vector for inf... [8.1 KB]
+Allocating iteration vectors... [2 x 8.1 KB]
+TOTAL: [73.6 KB]
+
+Starting iterations...
+
+Iterative method: 161 iterations in 0.01 seconds (average 0.000025, setup 0.00)
+
+Value in the initial state: 66.99906733750048
+
+Time for model checking: 0.048 seconds.
+
+Result: 66.99906733750048 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+

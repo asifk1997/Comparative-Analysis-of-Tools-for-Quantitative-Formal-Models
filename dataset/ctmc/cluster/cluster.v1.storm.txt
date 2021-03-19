@@ -1,0 +1,60 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:32:46 2021
+Command line arguments: --jani /home/asif/dataset/ctmc/cluster/cluster.v1.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.028s.
+
+Time for model construction: 0.125s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	276
+Transitions: 	1120
+Reward Models:  time_not_min, percent_op, num_repairs
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * premium -> 64 item(s)
+   * label_minimum -> 132 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "below_min": R[exp]{"time_not_min"}min=? [C<=2000] ...
+Result (for initial states): 0.004659192425
+Time for model checking: 6.583s.
+
+Model checking property "operational": R[exp]{"percent_op"}min=? [I=20] ...
+Result (for initial states): 99.87643558
+Time for model checking: 0.063s.
+
+Model checking property "premium_steady": LRAmin=? ["premium"] ...
+Result (for initial states): 0.9999615312
+Time for model checking: 0.006s.
+
+Model checking property "qos1": Pmin=? [true U<=2000 !("label_minimum")] ...
+Result (for initial states): 0.001158395575
+Time for model checking: 2.177s.
+
+Model checking property "qos2": Pmin=? [true U[20, 20] !("label_minimum")] ...
+Result (for initial states): 2.201599927e-06
+Time for model checking: 0.067s.
+
+Model checking property "qos3": Pmin=? ["label_minimum" U<=20 "premium"] ...
+Result (for initial states): 1
+Time for model checking: 0.016s.
+
+Model checking property "qos4": Pmin=? [!("label_minimum") U>=20 "label_minimum"] ...
+Result (for initial states): 0
+Time for model checking: 0.034s.
+
+Model checking property "repairs": R[exp]{"num_repairs"}min=? [C<=2000] ...
+Result (for initial states): 17.36977836
+Time for model checking: 6.605s.
+
+Performance statistics:
+  * peak memory usage: 122MB
+  * CPU time: 15.756s
+  * wallclock time: 15.719s

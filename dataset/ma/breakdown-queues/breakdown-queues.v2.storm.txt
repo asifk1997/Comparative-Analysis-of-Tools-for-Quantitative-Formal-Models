@@ -1,0 +1,55 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:27:04 2021
+Command line arguments: --jani /home/asif/dataset/ma/breakdown-queues/breakdown-queues.v2.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.021s.
+
+Time for model construction: 2.501s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	21951
+Transitions: 	39646
+Choices: 	23665
+Markovian St.: 	9817
+Max. Rate: 	178
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 1700 item(s)
+   * init -> 1 item(s)
+   * ((buf = 8) & !(reset)) -> 1547 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	21951
+Transitions: 	39646
+Choices: 	23665
+Markovian St.: 	9817
+Max. Rate: 	178
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 1700 item(s)
+   * init -> 1 item(s)
+   * ((buf = 8) & !(reset)) -> 1547 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "Min": Pmin=? [F ((buf = 8) & !(reset))] ...
+Result (for initial states): 0.02800482792
+Time for model checking: 0.070s.
+
+Model checking property "Max": Pmax=? [F ((buf = 8) & !(reset))] ...
+Result (for initial states): 0.2317739605
+Time for model checking: 0.067s.
+
+Performance statistics:
+  * peak memory usage: 124MB
+  * CPU time: 2.699s
+  * wallclock time: 2.671s

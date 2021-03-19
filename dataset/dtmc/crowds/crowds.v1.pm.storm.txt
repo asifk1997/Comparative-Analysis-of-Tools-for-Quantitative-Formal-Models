@@ -1,0 +1,32 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:27:30 2021
+Command line arguments: --prism /home/asif/dataset/dtmc/crowds/crowds.v1.prism --timemem --prop /home/asif/dataset/dtmc/crowds/crowds.v1.props -pc --constants 'TotalRuns = 3, CrowdSize = 5
+'
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.276s.
+
+Time for model construction: 0.086s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1145
+Transitions: 	1955
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 50 item(s)
+   * (observe0 > 1) -> 6 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "positive": P=? [F (observe0 > 1)] ...
+Result (for initial states): 0.0529625351
+Time for model checking: 0.006s.
+
+Performance statistics:
+  * peak memory usage: 149MB
+  * CPU time: 0.446s
+  * wallclock time: 0.406s

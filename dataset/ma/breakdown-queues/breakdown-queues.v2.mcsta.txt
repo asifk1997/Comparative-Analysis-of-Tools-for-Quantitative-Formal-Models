@@ -1,0 +1,40 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+breakdown-queues.v2.jani:model: info: breakdown-queues is an MA model.
+breakdown-queues.v2.jani: info: Need 16 bytes per state.
+breakdown-queues.v2.jani: info: Explored 20583 states.
+
+Peak memory usage: 56 MB
+Analysis results for breakdown-queues.v2.jani
+
++ State space exploration
+  State size:  16 bytes
+  States:      20583
+  Transitions: 22137
+  Branches:    37060
+  Rate:        121793 states/s
+  Time:        0.2 s
+
++ Property Min
+  Probability: 0.02800482792035488
+  Bounds:      [0.02800482792035488, 1]
+  Time:        0.1 s
+
+  + Value iteration
+    Final error: 6.362991013043461E-07
+    Iterations:  21
+    Time:        0.0 s
+
++ Property Max
+  Probability: 0.2317739605170153
+  Bounds:      [0.2317739605170153, 1]
+  Time:        0.0 s
+
+  + Value iteration
+    Final error: 6.362991013043461E-07
+    Iterations:  21
+    Time:        0.0 s
+

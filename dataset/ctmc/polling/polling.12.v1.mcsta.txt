@@ -1,0 +1,63 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+polling.12.v1.jani:model: info: polling.12 is a CTMC model.
+polling.12.v1.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
+polling.12.v1.jani:variables[4]: info: Expanding variable "s1" into 2 locations in automaton "station1".
+polling.12.v1.jani:variables[5]: info: Expanding variable "s2" into 2 locations in automaton "station2".
+polling.12.v1.jani:variables[6]: info: Expanding variable "s3" into 2 locations in automaton "station3".
+polling.12.v1.jani:variables[7]: info: Expanding variable "s4" into 2 locations in automaton "station4".
+polling.12.v1.jani:variables[8]: info: Expanding variable "s5" into 2 locations in automaton "station5".
+polling.12.v1.jani:variables[9]: info: Expanding variable "s6" into 2 locations in automaton "station6".
+polling.12.v1.jani:variables[10]: info: Expanding variable "s7" into 2 locations in automaton "station7".
+polling.12.v1.jani:variables[11]: info: Expanding variable "s8" into 2 locations in automaton "station8".
+polling.12.v1.jani:variables[12]: info: Expanding variable "s9" into 2 locations in automaton "station9".
+polling.12.v1.jani:variables[13]: info: Expanding variable "s10" into 2 locations in automaton "station10".
+polling.12.v1.jani:variables[14]: info: Expanding variable "s11" into 2 locations in automaton "station11".
+polling.12.v1.jani:variables[15]: info: Expanding variable "s12" into 2 locations in automaton "station12".
+polling.12.v1.jani:properties[2]: warning: Skipping unsupported property "served".
+polling.12.v1.jani:properties[4]: warning: Skipping unsupported property "waiting".
+polling.12.v1.jani: info: Need 32 bytes per state.
+polling.12.v1.jani: info: Explored 73728 states.
+
+Peak memory usage: 87 MB
+Analysis results for polling.12.v1.jani
+
++ State space exploration
+  State size:  32 bytes
+  States:      73728
+  Transitions: 73728
+  Branches:    503808
+  Rate:        53542 states/s
+  Time:        1.5 s
+
++ Property s1
+  Value: 0.1362768195016783
+  Time:  61.4 s
+
+  + LongRunAverage
+    Time:                   61.2642785
+    Max. end components:    1
+    Max. exit rate:         201
+    Min. exit rate:         1
+    Avg. exit rate:         134.1527777777839
+    Max number of actions:  0
+    Min number of actions:  2147483647
+    Avg. number of actions: 0
+
++ Property s1_before_s2
+  Probability: 0.5407870133067048
+  Bounds:      [0.5407870133067048, 1]
+  Time:        2.2 s
+
+  + Value iteration
+    Final error: 9.92015955580179E-07
+    Iterations:  468
+    Time:        2.2 s
+
++ Property station1_polled
+  Probability: 1
+  Time:        0.0 s
+

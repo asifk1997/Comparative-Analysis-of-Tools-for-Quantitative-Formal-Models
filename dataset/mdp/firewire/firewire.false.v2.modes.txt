@@ -1,0 +1,19 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+firewire.false.v2.jani:model: info: firewire.false is an MDP model and will be simulated as an MDP.
+firewire.false.v2.jani:variables[7]: info: Expanding variable "s1" into 9 locations in automaton "node1".
+firewire.false.v2.jani:variables[8]: info: Expanding variable "w21" into 10 locations in automaton "wire21".
+firewire.false.v2.jani:variables[12]: info: Expanding variable "s2" into 9 locations in automaton "node2".
+firewire.false.v2.jani: info: Using default value of 0.95 for the confidence parameter.
+firewire.false.v2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+firewire.false.v2.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+firewire.false.v2.jani:model: error: Encountered structural nondeterminism between snd_idle12 and snd_idle21.
+
+Peak memory usage: 57 MB
+Analysis results for firewire.false.v2.jani
+Status:          Error
+Simulation time: 0.1 s
+

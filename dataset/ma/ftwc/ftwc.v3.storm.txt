@@ -1,0 +1,73 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:27:08 2021
+Command line arguments: --jani /home/asif/dataset/ma/ftwc/ftwc.v3.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.061s.
+
+Time for model construction: 0.662s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	3873
+Transitions: 	10041
+Choices: 	4829
+Markovian St.: 	1636
+Max. Rate: 	2.0147
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1])) -> 1015 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	3873
+Transitions: 	10041
+Choices: 	4829
+Markovian St.: 	1636
+Max. Rate: 	2.0147
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1])) -> 1015 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "ReachMinIsOne": Pmin>=1 [F (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+Result (for initial states): 1
+Time for model checking: 0.006s.
+
+Model checking property "ReachMinIsOne_1": Pmin>=1 [F (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+Result (for initial states): 1
+Time for model checking: 0.005s.
+
+Model checking property "TimeMax": T[exp]max=? [F (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+Result (for initial states): 1933087.545
+Time for model checking: 22.266s.
+
+Model checking property "TimeMin": T[exp]min=? [F (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+Result (for initial states): 2005816.148
+Time for model checking: 0.857s.
+
+Model checking property "PmaxReachBound": Pmax=? [true U<=5 (((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+ WARN (numerical.cpp:130): Fox-Glynn: right = 627 >> lambda = 400, cannot bound the right tail. The results are unreliable.
+ERROR (numerical.cpp:222): Fox-Glynn: 627 > 600, underflow is possible.
+Result (for initial states): 1.072778462e-06
+Time for model checking: 0.523s.
+
+Model checking property "SmaxReach": LRAmax=? [(((workstations_up[0] = 0) | switches_down[0]) & ((workstations_up[1] = 0) | switches_down[1]))] ...
+Result (for initial states): 2.51742668e-06
+Time for model checking: 0.470s.
+
+Performance statistics:
+  * peak memory usage: 124MB
+  * CPU time: 24.844s
+  * wallclock time: 24.866s

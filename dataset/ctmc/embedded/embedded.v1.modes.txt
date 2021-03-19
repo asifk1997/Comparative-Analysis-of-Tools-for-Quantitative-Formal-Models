@@ -1,0 +1,16 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+embedded.v1.jani:model: info: embedded is a CTMC model and will be simulated as an MA.
+embedded.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+embedded.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+embedded.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+embedded.v1.jani:model: error: Run length exceeded.
+
+Peak memory usage: 57 MB
+Analysis results for embedded.v1.jani
+Status:          Error
+Simulation time: 0.2 s
+

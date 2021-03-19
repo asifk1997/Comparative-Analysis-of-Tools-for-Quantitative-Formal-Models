@@ -1,0 +1,25 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+crowds.v1.jani:model: info: crowds is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+crowds.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+crowds.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 57 MB
+Analysis results for crowds.v1.jani
+Status:          Finished
+Simulation time: 0.2 s
+
++ Property Property "positive"
+  Estimated probability: 0.06140724946695096
+  Runs used:             4690
+  Run type:              MDP
+  Status:                Finished
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ
+    ε:         0.01
+    δ:         0.050000000000000044
+

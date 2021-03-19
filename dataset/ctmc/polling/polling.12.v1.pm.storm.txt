@@ -1,0 +1,65 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:28:03 2021
+Command line arguments: --prism /home/asif/dataset/ctmc/polling/polling.12.v1.prism --timemem --prop /home/asif/dataset/ctmc/polling/polling.v1.props -pc --constants 'T = 16
+'
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+ WARN (Program.cpp:178): The input model is a CTMC, but uses probabilistic commands like they are used in PRISM. Consider rewriting the commands to use Markovian commands instead.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+Time for model input parsing: 0.180s.
+
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+ WARN (Program.cpp:1277): The model uses synchronizing Markovian commands. This may lead to unexpected verification results, because of unclear semantics.
+Time for model construction: 14.055s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	73728
+Transitions: 	503808
+Reward Models:  waiting, served
+State Labels: 	6 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((s1 = 1) & !(((s = 1) & (a = 1)))) -> 35840 item(s)
+   * ((s = 2) & (a = 1)) -> 2048 item(s)
+   * ((s = 1) & (a = 1)) -> 2048 item(s)
+   * ((s = 1) & (a = 0)) -> 4096 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "s1": LRA=? [((s1 = 1) & !(((s = 1) & (a = 1))))] ...
+Result (for initial states): 0.1363290009
+Time for model checking: 5.458s.
+
+Model checking property "s1_before_s2": P=? [!(((s = 2) & (a = 1))) U ((s = 1) & (a = 1))] ...
+Result (for initial states): 0.5408099144
+Time for model checking: 1.076s.
+
+Model checking property "served": R[exp]{"served"}=? [C<=16] ...
+Result (for initial states): 0.9394469524
+Time for model checking: 75.361s.
+
+Model checking property "station1_polled": P=? [true U<=16 ((s = 1) & (a = 0))] ...
+Result (for initial states): 1
+Time for model checking: 67.853s.
+
+Model checking property "waiting": R[exp]{"waiting"}=? [C<=16] ...
+Result (for initial states): 1.461110303
+Time for model checking: 75.206s.
+
+Performance statistics:
+  * peak memory usage: 221MB
+  * CPU time: 239.125s
+  * wallclock time: 239.238s

@@ -1,0 +1,113 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+dpm.v2.jani:model: info: dpm is an MA model.
+dpm.v2.jani: info: Need 16 bytes per state.
+dpm.v2.jani: info: Explored 34625 states.
+dpm.v2.jani:properties[4]: warning: Computing minimum expected reward in property "TminQueuesFull" without checking for zero-reward end components.
+dpm.v2.jani: info: Identified 34611 maximal end components.
+dpm.v2.jani: warning: Encountered a value greater than 1 during interval iteration. The final result for property "PmaxQueuesFullBound" is likely affected by floating-point errors.
+
+Peak memory usage: 67 MB
+Analysis results for dpm.v2.jani
+
++ State space exploration
+  State size:  16 bytes
+  States:      34625
+  Transitions: 41700
+  Branches:    66700
+  Rate:        146716 states/s
+  Time:        0.3 s
+
++ Property PminQueuesFull
+  Probability: 0.004322771573517709
+  Bounds:      [0.004322771573517709, 1]
+  Time:        0.2 s
+
+  + Value iteration
+    Final error: 4.888271855736597E-07
+    Iterations:  23
+    Time:        0.0 s
+
++ Property PmaxQueuesFull
+  Probability: 0.9999997044883819
+  Bounds:      [0.9999997044883819, 1]
+  Time:        0.3 s
+
+  + Value iteration
+    Final error: 8.853067338517947E-07
+    Iterations:  96
+    Time:        0.2 s
+
++ Property PminQueue1Full
+  Probability: 0.12917046951351024
+  Bounds:      [0.12917046951351024, 1]
+  Time:        0.1 s
+
+  + Value iteration
+    Final error: 4.823464169544934E-07
+    Iterations:  18
+    Time:        0.0 s
+
++ Property PmaxQueue1Full
+  Probability: 0.9999997111548868
+  Bounds:      [0.9999997111548868, 1]
+  Time:        0.3 s
+
+  + Value iteration
+    Final error: 9.096989610028536E-07
+    Iterations:  93
+    Time:        0.1 s
+
++ Property TminQueuesFull
+  Value:  29.699055178713948
+  Bounds: [29.699055178713948, infinity)
+  Time:   0.4 s
+
+  + Precomputations
+    Max. prob. 1 states:          34625
+    Time for max. prob. 1 states: 0.1 s
+
+  + Value iteration
+    Final error: 8.786069711031191E-07
+    Iterations:  99
+    Time:        0.2 s
+
++ Property PmaxQueuesFullBound
+  Probability: 2.50002115456875E-05
+  Bounds:      [2.1146594411987037E-10, 5.000021162543088E-05]
+  Time:        0.9 s
+
+  + Precomputations
+    Max. prob. 0 states:          0
+    Time for max. prob. 0 states: 0.0 s
+
+  + End components
+    Iterations:  2
+    MECs:        34611
+    Transitions: 41700
+    Branches:    66700
+    Time:        0.1 s
+
+  + Unif+
+    Time:             0.6 s
+    Max. exit rate:   4.1
+    Iterations:       1
+    Final unif. rate: 4.1
+
++ Property SmaxQueuesFull
+  Value: 0.9999398217926553
+  Time:  1.7 s
+
+  + LongRunAverage
+    Time:                   1.5403158
+    Max. end components:    1
+    Max. exit rate:         4.1
+    Min. exit rate:         0.166
+    Avg. exit rate:         2.1564444444444746
+    Max number of actions:  6
+    Min number of actions:  1
+    Avg. number of actions: 1.302673796791444
+

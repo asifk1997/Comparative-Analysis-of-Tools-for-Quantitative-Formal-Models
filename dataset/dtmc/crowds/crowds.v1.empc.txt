@@ -1,0 +1,17 @@
+[1615999649066] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999649066] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1615999649251] Starting model checking...
+[1615999649251] Analysing property positive
+[1615999649268] Starting to compute JANI explorer...
+[1615999649416] Starting to build initial states of JANI explorer...
+[1615999649422] Done building initial states of JANI explorer
+[1615999649423] Done building JANI explorer
+[1615999649431] Starting to build model...
+[1615999649455] Building model done. 1 states. Time for model exploration: 0 seconds.
+[1615999649500] Starting iteration...
+[1615999649592] Done. Did 1 iterations in 0 seconds.
+[1615999649603] 1 states fulfilling filter "initial"
+[1615999649604] Printing all results for all states fulfilling states filter
+[1615999649611] 0:0=0.0000000
+[1615999649623] Finished model checking. Time required: 0 seconds
+[1615999649630] positive: 0.0000000

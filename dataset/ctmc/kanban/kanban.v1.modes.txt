@@ -1,0 +1,10 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+kanban.v1.jani:model: info: kanban is a CTMC model and will be simulated as an MA.
+kanban.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+kanban.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+kanban.v1.jani:properties[0]: warning: Ignoring property "throughput" because the transient or evaluation duration for long-run average value simulation is not configured.
+kanban.v1.jani: error: There are no compatible properties to evaluate.

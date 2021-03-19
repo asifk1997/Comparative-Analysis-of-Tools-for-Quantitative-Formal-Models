@@ -1,0 +1,3 @@
+[1615999665836] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999665837] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+Feature "state-exit-rewards" is not supported. The supported features are [functions,hyperbolic-functions,derived-operators,trigonometric-functions]

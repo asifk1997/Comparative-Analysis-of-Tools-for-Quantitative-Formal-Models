@@ -1,0 +1,90 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:33:15 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/ctmc/kanban/kanban.v1.prism /home/asif/dataset/ctmc/kanban/kanban.v1.props -const t=2 -extrareachinfo
+
+Parsing model file "/home/asif/dataset/ctmc/kanban/kanban.v1.prism"...
+
+Type:        CTMC
+Modules:     k1 k2 k3 k4 
+Variables:   w1 x1 y1 z1 w2 x2 y2 z2 w3 x3 y3 z3 w4 x4 y4 z4 
+
+Parsing properties file "/home/asif/dataset/ctmc/kanban/kanban.v1.props"...
+
+1 property:
+(1) "throughput": R{"throughput"}=? [ S ]
+
+---------------------------------------------------------------------
+
+Model checking: "throughput": R{"throughput"}=? [ S ]
+Model constants: t=2
+
+Building model...
+Model constants: t=2
+
+Computing reachable states...
+Iteration 1: 1 states (34 nodes) (0.00 seconds)
+Iteration 2: 2 states (36 nodes) (0.00 seconds)
+Iteration 3: 5 states (42 nodes) (0.00 seconds)
+Iteration 4: 8 states (60 nodes) (0.00 seconds)
+Iteration 5: 16 states (87 nodes) (0.00 seconds)
+Iteration 6: 27 states (102 nodes) (0.00 seconds)
+Iteration 7: 47 states (136 nodes) (0.00 seconds)
+Iteration 8: 78 states (174 nodes) (0.00 seconds)
+Iteration 9: 120 states (191 nodes) (0.00 seconds)
+Iteration 10: 177 states (199 nodes) (0.00 seconds)
+Iteration 11: 253 states (214 nodes) (0.00 seconds)
+Iteration 12: 357 states (218 nodes) (0.00 seconds)
+Iteration 13: 480 states (246 nodes) (0.00 seconds)
+Iteration 14: 603 states (260 nodes) (0.00 seconds)
+Iteration 15: 731 states (274 nodes) (0.00 seconds)
+Iteration 16: 865 states (292 nodes) (0.00 seconds)
+Iteration 17: 1046 states (295 nodes) (0.00 seconds)
+Iteration 18: 1283 states (302 nodes) (0.00 seconds)
+Iteration 19: 1583 states (301 nodes) (0.00 seconds)
+Iteration 20: 1898 states (297 nodes) (0.00 seconds)
+Iteration 21: 2183 states (275 nodes) (0.00 seconds)
+Iteration 22: 2443 states (255 nodes) (0.00 seconds)
+Iteration 23: 2712 states (258 nodes) (0.00 seconds)
+Iteration 24: 3057 states (248 nodes) (0.00 seconds)
+Iteration 25: 3478 states (234 nodes) (0.00 seconds)
+Iteration 26: 3925 states (206 nodes) (0.00 seconds)
+Iteration 27: 4303 states (168 nodes) (0.00 seconds)
+Iteration 28: 4519 states (131 nodes) (0.00 seconds)
+Iteration 29: 4600 states (98 nodes) (0.00 seconds)
+
+Reachability (BFS): 29 iterations in 0.01 seconds (average 0.000414, setup 0.00)
+
+Time for model construction: 0.029 seconds.
+
+Type:        CTMC
+States:      4600 (1 initial)
+Transitions: 28120
+
+Rate matrix: 1685 nodes (14 terminal), 28120 minterms, vars: 32r/32c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:4600
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=32, nodes=1685] [79.0 KB]
+Adding explicit sparse matrices... [levels=32, num=1, compact] [114.4 KB]
+Creating vector for diagonals... [dist=129, compact] [10.0 KB]
+Allocating iteration vectors... [2 x 35.9 KB]
+TOTAL: [275.3 KB]
+
+Starting iterations...
+
+Jacobi: 10000 iterations in 0.93 seconds (average 0.000093, setup 0.01)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+

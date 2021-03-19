@@ -1,0 +1,5 @@
+[1616089863624] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1616089863624] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1616089863663] Starting to parse PRISM model...
+[1616089863800] Done parsing PRISM model
+line: 1, column: 11: Unexpected character "^"

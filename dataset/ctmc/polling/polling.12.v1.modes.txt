@@ -1,0 +1,80 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+polling.12.v1.jani:model: info: polling.12 is a CTMC model and will be simulated as an MA.
+polling.12.v1.jani:variables[3]: info: Expanding variable "a" into 2 locations in automaton "server".
+polling.12.v1.jani:variables[4]: info: Expanding variable "s1" into 2 locations in automaton "station1".
+polling.12.v1.jani:variables[5]: info: Expanding variable "s2" into 2 locations in automaton "station2".
+polling.12.v1.jani:variables[6]: info: Expanding variable "s3" into 2 locations in automaton "station3".
+polling.12.v1.jani:variables[7]: info: Expanding variable "s4" into 2 locations in automaton "station4".
+polling.12.v1.jani:variables[8]: info: Expanding variable "s5" into 2 locations in automaton "station5".
+polling.12.v1.jani:variables[9]: info: Expanding variable "s6" into 2 locations in automaton "station6".
+polling.12.v1.jani:variables[10]: info: Expanding variable "s7" into 2 locations in automaton "station7".
+polling.12.v1.jani:variables[11]: info: Expanding variable "s8" into 2 locations in automaton "station8".
+polling.12.v1.jani:variables[12]: info: Expanding variable "s9" into 2 locations in automaton "station9".
+polling.12.v1.jani:variables[13]: info: Expanding variable "s10" into 2 locations in automaton "station10".
+polling.12.v1.jani:variables[14]: info: Expanding variable "s11" into 2 locations in automaton "station11".
+polling.12.v1.jani:variables[15]: info: Expanding variable "s12" into 2 locations in automaton "station12".
+polling.12.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+polling.12.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+polling.12.v1.jani:properties[0]: warning: Ignoring property "s1" because the transient or evaluation duration for long-run average value simulation is not configured.
+polling.12.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+polling.12.v1.jani:model: error: Run length exceeded.
+
+Peak memory usage: 58 MB
+Analysis results for polling.12.v1.jani
+Status:          Error
+Simulation time: 20.8 s
+
++ Properties "s1_before_s2", "served", "station1_polled" and "waiting"
+  Run type: MA
+  Status:   Error
+
+  + Property Property "s1_before_s2"
+    Estimated probability: 0.5368298368298369
+    Runs used:             12870
+
+    + Error bounds
+      Statement: Aborted: no error bounds
+
+  + Property Property "served"
+    Estimated value:     0.9229992229992237
+    Confidence interval: [0.9082724260617568, 0.9377260199366905]
+    Runs used:           12870
+
+    + Sample data
+      Mean:     0.9229992229992237
+      Variance: 0.7266059701602485
+      Skewness: 0.7293181780138327
+      Kurtosis: 3.214766836048125
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+
+  + Property Property "station1_polled"
+    Estimated probability: 1
+    Runs used:             490
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "waiting"
+    Estimated value:     1.4721140832360498
+    Confidence interval: [1.4350299421712154, 1.5091982243008841]
+    Runs used:           12870
+
+    + Sample data
+      Mean:     1.4721140832360498
+      Variance: 4.607430720839981
+      Skewness: 1.891291931553769
+      Kurtosis: 6.64278181159979
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+

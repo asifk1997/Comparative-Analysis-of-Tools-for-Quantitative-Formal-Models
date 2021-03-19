@@ -1,0 +1,18 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+philosophers-mdp.3.v1.jani:model: info: philosophers-mdp.3 is an MDP model and will be simulated as an MDP.
+philosophers-mdp.3.v1.jani:variables[0]: info: Expanding variable "p1" into 12 locations in automaton "phil1".
+philosophers-mdp.3.v1.jani:variables[1]: info: Expanding variable "p2" into 12 locations in automaton "phil2".
+philosophers-mdp.3.v1.jani:variables[2]: info: Expanding variable "p3" into 12 locations in automaton "phil3".
+philosophers-mdp.3.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+philosophers-mdp.3.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+philosophers-mdp.3.v1.jani:model: error: Encountered structural nondeterminism between τ, τ, τ, τ, τ and τ.
+
+Peak memory usage: 56 MB
+Analysis results for philosophers-mdp.3.v1.jani
+Status:          Error
+Simulation time: 0.1 s
+

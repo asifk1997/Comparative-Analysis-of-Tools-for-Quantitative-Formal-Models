@@ -1,0 +1,31 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+pacman.v1.jani:model: info: pacman is an MDP model.
+pacman.v1.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in automaton "arbiter".
+pacman.v1.jani: info: Need 16 bytes per state.
+pacman.v1.jani: info: Explored 235 states.
+
+Peak memory usage: 67 MB
+Analysis results for pacman.v1.jani
+
++ State space exploration
+  State size:  16 bytes
+  States:      235
+  Transitions: 295
+  Branches:    303
+  Rate:        4700 states/s
+  Time:        0.1 s
+
++ Property crash
+  Probability: 0.5511
+  Bounds:      [0.5511, 0.5511]
+  Time:        0.1 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        0.0 s
+

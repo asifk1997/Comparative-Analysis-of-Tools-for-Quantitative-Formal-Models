@@ -1,0 +1,33 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:27:35 2021
+Command line arguments: --prism /home/asif/dataset/mdp/pacman/pacman.v1.prism --timemem --prop /home/asif/dataset/mdp/pacman/pacman.v1.props -pc --constants 'MAXSTEPS = 5
+'
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 2.307s.
+
+Time for model construction: 0.266s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	235
+Transitions: 	303
+Choices: 	295
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * Crash -> 3 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "crash": Pmin=? [F "Crash"] ...
+Result (for initial states): 0.5511
+Time for model checking: 0.002s.
+
+Performance statistics:
+  * peak memory usage: 151MB
+  * CPU time: 2.741s
+  * wallclock time: 2.716s

@@ -1,0 +1,32 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:27:47 2021
+Command line arguments: --prism /home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.prism --timemem --prop /home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.props -pc
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.092s.
+
+Time for model construction: 0.067s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	440
+Transitions: 	1404
+Choices: 	1239
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((((p1 >= 8) & (p1 <= 9)) | ((p2 >= 8) & (p2 <= 9))) | ((p3 >= 8) & (p3 <= 9))) -> 96 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "eat": Pmax=? [F ((((p1 >= 8) & (p1 <= 9)) | ((p2 >= 8) & (p2 <= 9))) | ((p3 >= 8) & (p3 <= 9)))] ...
+Result (for initial states): 1
+Time for model checking: 0.001s.
+
+Performance statistics:
+  * peak memory usage: 148MB
+  * CPU time: 0.209s
+  * wallclock time: 0.190s

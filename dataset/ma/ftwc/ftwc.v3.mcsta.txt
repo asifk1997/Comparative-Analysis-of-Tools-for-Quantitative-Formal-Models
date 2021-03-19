@@ -1,0 +1,99 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+ftwc.v3.jani:model: info: ftwc is an MA model.
+ftwc.v3.jani: info: Need at least 40 bytes per state.
+ftwc.v3.jani: info: Explored 3873 states.
+ftwc.v3.jani:properties[3]: warning: Computing minimum expected reward in property "TimeMin" without checking for zero-reward end components.
+ftwc.v3.jani: info: Identified 3307 maximal end components.
+
+Peak memory usage: 55 MB
+Analysis results for ftwc.v3.jani
+
++ State space exploration
+  Min. state size: 40 bytes
+  States:          3873
+  Transitions:     4829
+  Branches:        10041
+  Rate:            37240 states/s
+  Time:            0.1 s
+
++ Property ReachMinIsOne
+  Result:      True
+  Time:        0.1 s
+  Probability: 1
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          3873
+    Time for min. prob. 1 states: 0.0 s
+
++ Property TimeMax
+  Value:  1933064.4267881927
+  Bounds: [1933064.4267881927, infinity)
+  Time:   18.2 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          3873
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 9.999939673723008E-07
+    Iterations:  114442
+    Time:        18.2 s
+
++ Property TimeMin
+  Value:  1932937.2802934905
+  Bounds: [1932937.2802934905, infinity)
+  Time:   17.6 s
+
+  + Precomputations
+    Max. prob. 1 states:          3873
+    Time for max. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 9.999742021680754E-07
+    Iterations:  114437
+    Time:        17.5 s
+
++ Property PmaxReachBound
+  Probability: 2.607277846163785E-05
+  Bounds:      [1.0727784616378472E-06, 5.107277846163785E-05]
+  Time:        0.5 s
+
+  + Precomputations
+    Max. prob. 0 states:          0
+    Time for max. prob. 0 states: 0.0 s
+
+  + End components
+    Iterations:  2
+    MECs:        3307
+    Transitions: 4605
+    Branches:    9817
+    Time:        0.1 s
+
+  + Unif+
+    Time:             0.2 s
+    Max. exit rate:   2.0147
+    Iterations:       1
+    Final unif. rate: 2.0147
+
++ Property SmaxReach
+  Value: 2.048279277709969E-06
+  Time:  0.2 s
+
+  + LongRunAverage
+    Time:                   0.1034655
+    Max. end components:    1
+    Max. exit rate:         2.0147
+    Min. exit rate:         0.0167
+    Avg. exit rate:         1.155895354523225
+    Max number of actions:  5
+    Min number of actions:  1
+    Avg. number of actions: 1.4273580688421994
+

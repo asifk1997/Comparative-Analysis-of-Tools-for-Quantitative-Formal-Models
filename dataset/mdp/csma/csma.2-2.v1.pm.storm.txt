@@ -1,0 +1,50 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:27:34 2021
+Command line arguments: --prism /home/asif/dataset/mdp/csma/csma.2-2.v1.prism --timemem --prop /home/asif/dataset/mdp/csma/csma.v1.props -pc
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.164s.
+
+Time for model construction: 0.146s.
+
+-------------------------------------------------------------- 
+Model type: 	MDP (sparse)
+States: 	1038
+Transitions: 	1282
+Choices: 	1054
+Reward Models:  time
+State Labels: 	5 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * collision_max_backoff -> 2 item(s)
+   * all_delivered -> 3 item(s)
+   * ((min(((s1 = 4) ? cd1 : (2 + 1)), ((s2 = 4) ? cd2 : (2 + 1)))) < 2) -> 90 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "all_before_max": Pmax=? [!("collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.875
+Time for model checking: 0.004s.
+
+Model checking property "all_before_min": Pmin=? [!("collision_max_backoff") U "all_delivered"] ...
+Result (for initial states): 0.875
+Time for model checking: 0.001s.
+
+Model checking property "some_before": Pmin=? [F ((min(((s1 = 4) ? cd1 : (2 + 1)), ((s2 = 4) ? cd2 : (2 + 1)))) < 2)] ...
+Result (for initial states): 0.5
+Time for model checking: 0.001s.
+
+Model checking property "time_max": R[exp]{"time"}max=? [F "all_delivered"] ...
+Result (for initial states): 70.66575197
+Time for model checking: 0.005s.
+
+Model checking property "time_min": R[exp]{"time"}min=? [F "all_delivered"] ...
+Result (for initial states): 66.99932866
+Time for model checking: 0.086s.
+
+Performance statistics:
+  * peak memory usage: 149MB
+  * CPU time: 0.475s
+  * wallclock time: 0.443s

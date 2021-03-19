@@ -1,0 +1,30 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 20:52:29 2021
+Command line arguments: --prism /home/asif/dataset/ma/dpm/dpm.v2.empc.txt --timemem --prop /home/asif/dataset/ma/dpm/dpm.v2.empc.txt -pc --constants 'Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 20:52:29 2021
+Command line arguments: --prism /home/asif/dataset/ma/dpm/constants.txt --timemem --prop /home/asif/dataset/ma/dpm/constants.txt -pc --constants '\'''\''
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+ERROR (SpiritErrorHandler.h:26): Parsing error at 1:1:  expecting <model type>, here:
+	Storm 1.6.4 (dev)
+	^
+
+ERROR (storm.cpp:23): An exception caused Storm to terminate. The message of the exception is: WrongFormatException: Parsing error at 1:1:  expecting <model type>, here:
+	Storm 1.6.4 (dev)
+	^
+
+'
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+ERROR (SpiritErrorHandler.h:26): Parsing error at 1:1:  expecting <model type>, here:
+	Storm 1.6.4 (dev)
+	^
+
+ERROR (storm.cpp:23): An exception caused Storm to terminate. The message of the exception is: WrongFormatException: Parsing error at 1:1:  expecting <model type>, here:
+	Storm 1.6.4 (dev)
+	^
+

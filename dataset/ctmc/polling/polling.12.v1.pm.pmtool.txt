@@ -1,0 +1,215 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:42 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/ctmc/polling/polling.12.v1.prism /home/asif/dataset/ctmc/polling/polling.v1.props -const T=16 -extrareachinfo
+
+Parsing model file "/home/asif/dataset/ctmc/polling/polling.12.v1.prism"...
+
+Type:        CTMC
+Modules:     server station1 station2 station3 station4 station5 station6 station7 station8 station9 station10 station11 station12 
+Variables:   s a s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 
+
+Parsing properties file "/home/asif/dataset/ctmc/polling/polling.v1.props"...
+
+5 properties:
+(1) "s1": S=? [ s1=1&!(s=1&a=1) ]
+(2) "s1_before_s2": P=? [ !(s=2&a=1) U (s=1&a=1) ]
+(3) "served": R{"served"}=? [ C<=T ]
+(4) "station1_polled": P=? [ F<=T (s=1&a=0) ]
+(5) "waiting": R{"waiting"}=? [ C<=T ]
+
+---------------------------------------------------------------------
+
+Model checking: "s1": S=? [ s1=1&!(s=1&a=1) ]
+
+Building model...
+
+Computing reachable states...
+Iteration 1: 1 states (19 nodes) (0.00 seconds)
+Iteration 2: 14 states (31 nodes) (0.00 seconds)
+Iteration 3: 94 states (44 nodes) (0.00 seconds)
+Iteration 4: 405 states (56 nodes) (0.00 seconds)
+Iteration 5: 1266 states (71 nodes) (0.00 seconds)
+Iteration 6: 3084 states (85 nodes) (0.00 seconds)
+Iteration 7: 6156 states (102 nodes) (0.00 seconds)
+Iteration 8: 10482 states (120 nodes) (0.00 seconds)
+Iteration 9: 15765 states (144 nodes) (0.00 seconds)
+Iteration 10: 21598 states (168 nodes) (0.00 seconds)
+Iteration 11: 27662 states (197 nodes) (0.00 seconds)
+Iteration 12: 33793 states (229 nodes) (0.00 seconds)
+Iteration 13: 39935 states (264 nodes) (0.00 seconds)
+Iteration 14: 46066 states (304 nodes) (0.00 seconds)
+Iteration 15: 52130 states (315 nodes) (0.00 seconds)
+Iteration 16: 57963 states (311 nodes) (0.00 seconds)
+Iteration 17: 63246 states (295 nodes) (0.00 seconds)
+Iteration 18: 67572 states (269 nodes) (0.00 seconds)
+Iteration 19: 70644 states (236 nodes) (0.00 seconds)
+Iteration 20: 72462 states (198 nodes) (0.00 seconds)
+Iteration 21: 73323 states (158 nodes) (0.00 seconds)
+Iteration 22: 73634 states (118 nodes) (0.00 seconds)
+Iteration 23: 73714 states (81 nodes) (0.00 seconds)
+Iteration 24: 73727 states (49 nodes) (0.00 seconds)
+Iteration 25: 73728 states (38 nodes) (0.00 seconds)
+
+Reachability (BFS): 25 iterations in 0.01 seconds (average 0.000480, setup 0.00)
+
+Time for model construction: 0.034 seconds.
+
+Type:        CTMC
+States:      73728 (1 initial)
+Transitions: 503808
+
+Rate matrix: 1282 nodes (4 terminal), 503808 minterms, vars: 17r/17c
+
+SCCs: 1, BSCCs: 1, non-BSCC states: 0
+BSCC sizes: 1:73728
+
+Computing steady state probabilities for BSCC 1
+
+Computing probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=1315] [61.6 KB]
+Adding explicit sparse matrices... [levels=11, num=59, compact] [549.0 KB]
+Creating vector for diagonals... [dist=46, compact] [144.4 KB]
+Allocating iteration vectors... [2 x 576.0 KB]
+TOTAL: [1.9 MB]
+
+Starting iterations...
+
+Jacobi: 505 iterations in 1.00 seconds (average 0.001958, setup 0.01)
+
+BSCC 1 probability: 0.13633034232831812
+
+All states are in BSCCs (so no reachability probabilities computed)
+
+Value in the initial state: 0.13633034232831812
+
+Time for model checking: 1.077 seconds.
+
+Result: 0.13633034232831812 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "s1_before_s2": P=? [ !(s=2&a=1) U (s=1&a=1) ]
+
+Diagonals vector: 558 nodes (26 terminal), 73728 minterms
+Embedded Markov chain: 5828 nodes (48 terminal), 503808 minterms
+
+Prob0: 24 iterations in 0.01 seconds (average 0.000250, setup 0.00)
+
+Prob1: 23 iterations in 0.00 seconds (average 0.000174, setup 0.00)
+
+yes = 34816, no = 4096, maybe = 34816
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=5099] [239.0 KB]
+Adding explicit sparse matrices... [levels=12, num=44, compact] [616.4 KB]
+Creating vector for diagonals... [dist=1, compact] [144.0 KB]
+Creating vector for RHS... [dist=2, compact] [144.0 KB]
+Allocating iteration vectors... [2 x 576.0 KB]
+TOTAL: [2.2 MB]
+
+Starting iterations...
+Iteration 3837: max relative diff=0.000002, 5.00 sec so far
+
+Jacobi: 4054 iterations in 5.31 seconds (average 0.001306, setup 0.02)
+
+Value in the initial state: 0.5405407009913478
+
+Time for model checking: 5.342 seconds.
+
+Result: 0.5405407009913478 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "served": R{"served"}=? [ C<=T ]
+Property constants: T=16
+
+Computing rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=1315] [61.6 KB]
+Adding explicit sparse matrices... [levels=11, num=59, compact] [549.0 KB]
+Creating vector for diagonals... [dist=46, compact] [144.4 KB]
+Allocating iteration vectors... [3 x 576.0 KB]
+TOTAL: [2.4 MB]
+
+Uniformisation: q.t = 205.020000 x 16.000000 = 3280.320000
+Fox-Glynn: left = 2876, right = 3768
+
+Starting iterations...
+Iteration 2237 (of 3768): max relative diff=0.001208, 5.00 sec so far
+
+Iterative method: 3768 iterations in 8.46 seconds (average 0.002242, setup 0.01)
+
+Value in the initial state: 0.9394469360525104
+
+Time for model checking: 8.46 seconds.
+
+Result: 0.9394469360525104 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "station1_polled": P=? [ F<=T (s=1&a=0) ]
+Property constants: T=16
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 69632 of 73728 (94.4%)
+
+Building hybrid MTBDD matrix... [levels=17, nodes=1307] [61.3 KB]
+Adding explicit sparse matrices... [levels=11, num=58, compact] [539.0 KB]
+Creating vector for diagonals... [dist=47, compact] [144.4 KB]
+Allocating iteration vectors... [3 x 576.0 KB]
+TOTAL: [2.4 MB]
+
+Uniformisation: q.t = 205.020000 x 16.000000 = 3280.320000
+Fox-Glynn: left = 2876, right = 3768
+
+Starting iterations...
+Iteration 2350 (of 3768): max relative diff=0.001235, 5.00 sec so far
+
+Iterative method: 3768 iterations in 8.14 seconds (average 0.002156, setup 0.02)
+
+Value in the initial state: 1.0
+
+Time for model checking: 8.258 seconds.
+
+Result: 1.0 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "waiting": R{"waiting"}=? [ C<=T ]
+Property constants: T=16
+
+Computing rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=17, nodes=1315] [61.6 KB]
+Adding explicit sparse matrices... [levels=11, num=59, compact] [549.0 KB]
+Creating vector for diagonals... [dist=46, compact] [144.4 KB]
+Allocating iteration vectors... [3 x 576.0 KB]
+TOTAL: [2.4 MB]
+
+Uniformisation: q.t = 205.020000 x 16.000000 = 3280.320000
+Fox-Glynn: left = 2876, right = 3768
+
+Starting iterations...
+Iteration 2279 (of 3768): max relative diff=0.001072, 5.00 sec so far
+
+Iterative method: 3768 iterations in 8.29 seconds (average 0.002198, setup 0.01)
+
+Value in the initial state: 1.4611102714190265
+
+Time for model checking: 8.39 seconds.
+
+Result: 1.4611102714190265 (value in the initial state)
+

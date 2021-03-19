@@ -1,0 +1,69 @@
+[1615999658848] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999658848] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1615999659128] Starting model checking...
+[1615999659128] Analysing property elected
+[1615999659150] Starting to compute JANI explorer...
+[1615999659320] Starting to build initial states of JANI explorer...
+[1615999659325] Done building initial states of JANI explorer
+[1615999659326] Done building JANI explorer
+[1615999659336] Starting to build model...
+[1615999659665] Building model done. 4,093 states. Time for model exploration: 0 seconds.
+[1615999659771] Starting iteration...
+[1615999660068] Done. Did 4,566 iterations in 0 seconds.
+[1615999660088] 1 states fulfilling filter "initial"
+[1615999660088] Printing all results for all states fulfilling states filter
+[1615999660093] 0:0=true
+[1615999660099] Analysing property time_max
+[1615999660100] Starting to compute JANI explorer...
+[1615999660145] Starting to build initial states of JANI explorer...
+[1615999660148] Done building initial states of JANI explorer
+[1615999660148] Done building JANI explorer
+[1615999660148] Starting to build model...
+[1615999660355] Building model done. 4,093 states. Time for model exploration: 0 seconds.
+[1615999660426] Starting iteration...
+[1615999660683] Done. Did 4,990 iterations in 0 seconds.
+[1615999660687] 1 states fulfilling filter "initial"
+[1615999660687] Printing all results for all states fulfilling states filter
+[1615999660687] 0:0=299.0000000
+[1615999660693] Analysing property time_min
+[1615999660693] Starting to compute JANI explorer...
+[1615999660740] Starting to build initial states of JANI explorer...
+[1615999660748] Done building initial states of JANI explorer
+[1615999660749] Done building JANI explorer
+[1615999660749] Starting to build model...
+[1615999660878] Building model done. 4,093 states. Time for model exploration: 0 seconds.
+[1615999661149] Starting iteration...
+[1615999661159] Done. Did 167 iterations in 0 seconds.
+[1615999661163] 1 states fulfilling filter "initial"
+[1615999661163] Printing all results for all states fulfilling states filter
+[1615999661163] 0:0=138.2500000
+[1615999661164] Analysing property time_sending
+[1615999661164] Starting to compute JANI explorer...
+[1615999661185] Starting to build initial states of JANI explorer...
+[1615999661187] Done building initial states of JANI explorer
+[1615999661187] Done building JANI explorer
+[1615999661187] Starting to build model...
+[1615999661326] Building model done. 4,093 states. Time for model exploration: 0 seconds.
+[1615999661369] Starting iteration...
+[1615999661600] Done. Did 4,550 iterations in 0 seconds.
+[1615999661604] 1 states fulfilling filter "initial"
+[1615999661604] Printing all results for all states fulfilling states filter
+[1615999661604] 0:0=18.0000000
+[1615999661605] Analysing property deadline
+[1615999661606] Starting to compute JANI explorer...
+[1615999661624] Starting to build initial states of JANI explorer...
+[1615999661625] Done building initial states of JANI explorer
+[1615999661625] Done building JANI explorer
+[1615999661626] Starting to build model...
+[1615999661779] Building model done. 4,093 states. Time for model exploration: 0 seconds.
+[1615999661804] Starting iteration...
+[1615999661987] Done. Did 4,566 iterations in 0 seconds.
+[1615999661989] 1 states fulfilling filter "initial"
+[1615999661990] Printing all results for all states fulfilling states filter
+[1615999661990] 0:0=1.0000000
+[1615999661991] Finished model checking. Time required: 2 seconds
+[1615999661995] elected: true
+[1615999661995] time_max: 299.0000000
+[1615999661995] time_min: 138.2500000
+[1615999661996] time_sending: 18.0000000
+[1615999661996] deadline: 1.0000000

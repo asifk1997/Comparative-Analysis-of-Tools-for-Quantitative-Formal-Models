@@ -1,0 +1,1 @@
+N = 4, C = 4, TIME_BOUND = 1

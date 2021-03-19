@@ -1,0 +1,18 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+consensus.2.v1.jani:model: info: consensus.2 is an MDP model and will be simulated as an MDP.
+consensus.2.v1.jani:variables[6]: info: Expanding variable "pc1" into 4 locations in automaton "process1".
+consensus.2.v1.jani:variables[8]: info: Expanding variable "pc2" into 4 locations in automaton "process2".
+consensus.2.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+consensus.2.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+consensus.2.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+consensus.2.v1.jani:model: error: Encountered structural nondeterminism between tau/set and set/tau.
+
+Peak memory usage: 56 MB
+Analysis results for consensus.2.v1.jani
+Status:          Error
+Simulation time: 0.1 s
+

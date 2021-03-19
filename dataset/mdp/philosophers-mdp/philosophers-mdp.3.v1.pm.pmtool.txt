@@ -1,0 +1,69 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:38 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.prism /home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.props -extrareachinfo
+
+Parsing model file "/home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.prism"...
+
+Type:        MDP
+Modules:     phil1 phil2 phil3 
+Variables:   p1 p2 p3 
+
+Parsing properties file "/home/asif/dataset/mdp/philosophers-mdp/philosophers-mdp.3.v1.props"...
+
+1 property:
+(1) "eat": Pmax=? [ F (((p1>=8)&(p1<=9))|((p2>=8)&(p2<=9))|((p3>=8)&(p3<=9))) ]
+
+---------------------------------------------------------------------
+
+Model checking: "eat": Pmax=? [ F (((p1>=8)&(p1<=9))|((p2>=8)&(p2<=9))|((p3>=8)&(p3<=9))) ]
+
+Building model...
+
+Computing reachable states...
+Iteration 1: 1 states (14 nodes) (0.00 seconds)
+Iteration 2: 4 states (21 nodes) (0.00 seconds)
+Iteration 3: 13 states (27 nodes) (0.00 seconds)
+Iteration 4: 32 states (35 nodes) (0.00 seconds)
+Iteration 5: 65 states (44 nodes) (0.00 seconds)
+Iteration 6: 116 states (50 nodes) (0.00 seconds)
+Iteration 7: 184 states (68 nodes) (0.00 seconds)
+Iteration 8: 268 states (94 nodes) (0.00 seconds)
+Iteration 9: 364 states (103 nodes) (0.00 seconds)
+Iteration 10: 462 states (126 nodes) (0.00 seconds)
+Iteration 11: 558 states (136 nodes) (0.00 seconds)
+Iteration 12: 642 states (142 nodes) (0.00 seconds)
+Iteration 13: 719 states (159 nodes) (0.00 seconds)
+Iteration 14: 800 states (151 nodes) (0.00 seconds)
+Iteration 15: 872 states (122 nodes) (0.00 seconds)
+Iteration 16: 920 states (115 nodes) (0.00 seconds)
+Iteration 17: 950 states (92 nodes) (0.00 seconds)
+Iteration 18: 956 states (67 nodes) (0.00 seconds)
+
+Reachability (BFS): 18 iterations in 0.01 seconds (average 0.000278, setup 0.00)
+
+Time for model construction: 0.028 seconds.
+
+Type:        MDP
+States:      956 (1 initial)
+Transitions: 3696
+Choices:     3342
+
+Transition matrix: 910 nodes (3 terminal), 3696 minterms, vars: 12r/12c/3nd
+
+Prob0A: 6 iterations in 0.01 seconds (average 0.001833, setup 0.00)
+
+Prob1E: 7 iterations in 0.00 seconds (average 0.000286, setup 0.00)
+
+yes = 956, no = 0, maybe = 0
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.007 seconds.
+
+Result: 1.0 (value in the initial state)
+

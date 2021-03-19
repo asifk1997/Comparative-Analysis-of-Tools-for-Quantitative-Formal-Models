@@ -1,0 +1,54 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+brp.v1.jani:model: info: brp is a DTMC model.
+brp.v1.jani:variables[0]: info: Expanding variable "s" into 7 locations in automaton "sender".
+brp.v1.jani:variables[8]: info: Expanding variable "r" into 6 locations in automaton "receiver".
+brp.v1.jani:variables[16]: info: Expanding variable "k" into 3 locations in automaton "channelK".
+brp.v1.jani:variables[17]: info: Expanding variable "l" into 3 locations in automaton "channelL".
+brp.v1.jani: info: Need 24 bytes per state.
+brp.v1.jani: info: Explored 677 states.
+
+Peak memory usage: 52 MB
+Analysis results for brp.v1.jani
+
++ State space exploration
+  State size:  24 bytes
+  States:      677
+  Transitions: 677
+  Branches:    867
+  Rate:        11283 states/s
+  Time:        0.1 s
+
++ Property p1
+  Probability: 0.00042333344048672416
+  Bounds:      [0.00042333344048672416, 1]
+  Time:        0.2 s
+
+  + Value iteration
+    Final error: 9.213439249786284E-07
+    Iterations:  12
+    Time:        0.0 s
+
++ Property p2
+  Probability: 2.6453089096102274E-05
+  Bounds:      [2.6453089096102274E-05, 1]
+  Time:        0.0 s
+
+  + Value iteration
+    Final error: 2.0556145206884313E-07
+    Iterations:  14
+    Time:        0.0 s
+
++ Property p4
+  Probability: 8.000000000000001E-06
+  Bounds:      [8.000000000000001E-06, 8.000000000000001E-06]
+  Time:        0.0 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  2
+    Time:        0.0 s
+

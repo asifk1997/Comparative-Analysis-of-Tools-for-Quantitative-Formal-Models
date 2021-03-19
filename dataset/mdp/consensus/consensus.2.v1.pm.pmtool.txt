@@ -1,0 +1,467 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:35 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/mdp/consensus/consensus.2.v1.prism /home/asif/dataset/mdp/consensus/consensus.v1.props -const K=16 -extrareachinfo
+
+Parsing model file "/home/asif/dataset/mdp/consensus/consensus.2.v1.prism"...
+
+Type:        MDP
+Modules:     process1 process2 
+Variables:   counter pc1 coin1 pc2 coin2 
+
+Parsing properties file "/home/asif/dataset/mdp/consensus/consensus.v1.props"...
+
+5 properties:
+(1) "c1": P>=1 [ F "finished" ]
+(2) "c2": Pmin=? [ F "finished"&"all_coins_equal_1" ]
+(3) "disagree": Pmax=? [ F "finished"&!"agree" ]
+(4) "steps_max": R{"steps"}max=? [ F "finished" ]
+(5) "steps_min": R{"steps"}min=? [ F "finished" ]
+
+---------------------------------------------------------------------
+
+Model checking: "c1": P>=1 [ F "finished" ]
+Model constants: K=16
+
+Building model...
+Model constants: K=16
+
+Computing reachable states...
+Iteration 1: 1 states (15 nodes) (0.00 seconds)
+Iteration 2: 5 states (17 nodes) (0.00 seconds)
+Iteration 3: 13 states (24 nodes) (0.00 seconds)
+Iteration 4: 23 states (22 nodes) (0.00 seconds)
+Iteration 5: 34 states (28 nodes) (0.00 seconds)
+Iteration 6: 48 states (30 nodes) (0.00 seconds)
+Iteration 7: 62 states (28 nodes) (0.00 seconds)
+Iteration 8: 74 states (30 nodes) (0.00 seconds)
+Iteration 9: 86 states (28 nodes) (0.00 seconds)
+Iteration 10: 96 states (26 nodes) (0.00 seconds)
+Iteration 11: 106 states (29 nodes) (0.00 seconds)
+Iteration 12: 118 states (28 nodes) (0.00 seconds)
+Iteration 13: 128 states (26 nodes) (0.00 seconds)
+Iteration 14: 138 states (29 nodes) (0.00 seconds)
+Iteration 15: 150 states (28 nodes) (0.00 seconds)
+Iteration 16: 160 states (26 nodes) (0.00 seconds)
+Iteration 17: 170 states (31 nodes) (0.00 seconds)
+Iteration 18: 182 states (28 nodes) (0.00 seconds)
+Iteration 19: 192 states (26 nodes) (0.00 seconds)
+Iteration 20: 202 states (30 nodes) (0.00 seconds)
+Iteration 21: 214 states (28 nodes) (0.00 seconds)
+Iteration 22: 224 states (26 nodes) (0.00 seconds)
+Iteration 23: 234 states (29 nodes) (0.00 seconds)
+Iteration 24: 246 states (28 nodes) (0.00 seconds)
+Iteration 25: 256 states (26 nodes) (0.00 seconds)
+Iteration 26: 266 states (29 nodes) (0.00 seconds)
+Iteration 27: 278 states (28 nodes) (0.00 seconds)
+Iteration 28: 288 states (26 nodes) (0.00 seconds)
+Iteration 29: 298 states (30 nodes) (0.00 seconds)
+Iteration 30: 310 states (28 nodes) (0.00 seconds)
+Iteration 31: 320 states (26 nodes) (0.00 seconds)
+Iteration 32: 330 states (31 nodes) (0.00 seconds)
+Iteration 33: 342 states (28 nodes) (0.00 seconds)
+Iteration 34: 352 states (26 nodes) (0.00 seconds)
+Iteration 35: 362 states (29 nodes) (0.00 seconds)
+Iteration 36: 374 states (28 nodes) (0.00 seconds)
+Iteration 37: 384 states (26 nodes) (0.00 seconds)
+Iteration 38: 394 states (29 nodes) (0.00 seconds)
+Iteration 39: 406 states (28 nodes) (0.00 seconds)
+Iteration 40: 416 states (26 nodes) (0.00 seconds)
+Iteration 41: 426 states (32 nodes) (0.00 seconds)
+Iteration 42: 438 states (28 nodes) (0.00 seconds)
+Iteration 43: 448 states (26 nodes) (0.00 seconds)
+Iteration 44: 458 states (30 nodes) (0.00 seconds)
+Iteration 45: 470 states (28 nodes) (0.00 seconds)
+Iteration 46: 480 states (26 nodes) (0.00 seconds)
+Iteration 47: 490 states (29 nodes) (0.00 seconds)
+Iteration 48: 502 states (28 nodes) (0.00 seconds)
+Iteration 49: 512 states (26 nodes) (0.00 seconds)
+Iteration 50: 522 states (29 nodes) (0.00 seconds)
+Iteration 51: 534 states (28 nodes) (0.00 seconds)
+Iteration 52: 544 states (26 nodes) (0.00 seconds)
+Iteration 53: 554 states (30 nodes) (0.00 seconds)
+Iteration 54: 566 states (28 nodes) (0.00 seconds)
+Iteration 55: 576 states (26 nodes) (0.00 seconds)
+Iteration 56: 586 states (32 nodes) (0.00 seconds)
+Iteration 57: 598 states (28 nodes) (0.00 seconds)
+Iteration 58: 608 states (26 nodes) (0.00 seconds)
+Iteration 59: 618 states (29 nodes) (0.00 seconds)
+Iteration 60: 630 states (28 nodes) (0.00 seconds)
+Iteration 61: 640 states (26 nodes) (0.00 seconds)
+Iteration 62: 650 states (29 nodes) (0.00 seconds)
+Iteration 63: 662 states (28 nodes) (0.00 seconds)
+Iteration 64: 672 states (26 nodes) (0.00 seconds)
+Iteration 65: 682 states (31 nodes) (0.00 seconds)
+Iteration 66: 694 states (28 nodes) (0.00 seconds)
+Iteration 67: 704 states (26 nodes) (0.00 seconds)
+Iteration 68: 714 states (30 nodes) (0.00 seconds)
+Iteration 69: 726 states (28 nodes) (0.00 seconds)
+Iteration 70: 736 states (26 nodes) (0.00 seconds)
+Iteration 71: 746 states (29 nodes) (0.00 seconds)
+Iteration 72: 758 states (28 nodes) (0.00 seconds)
+Iteration 73: 768 states (26 nodes) (0.00 seconds)
+Iteration 74: 778 states (29 nodes) (0.00 seconds)
+Iteration 75: 790 states (28 nodes) (0.00 seconds)
+Iteration 76: 800 states (26 nodes) (0.00 seconds)
+Iteration 77: 810 states (30 nodes) (0.00 seconds)
+Iteration 78: 822 states (28 nodes) (0.00 seconds)
+Iteration 79: 832 states (26 nodes) (0.00 seconds)
+Iteration 80: 842 states (31 nodes) (0.00 seconds)
+Iteration 81: 854 states (28 nodes) (0.00 seconds)
+Iteration 82: 864 states (26 nodes) (0.00 seconds)
+Iteration 83: 874 states (29 nodes) (0.00 seconds)
+Iteration 84: 886 states (28 nodes) (0.00 seconds)
+Iteration 85: 896 states (26 nodes) (0.00 seconds)
+Iteration 86: 906 states (29 nodes) (0.00 seconds)
+Iteration 87: 918 states (28 nodes) (0.00 seconds)
+Iteration 88: 928 states (26 nodes) (0.00 seconds)
+Iteration 89: 938 states (34 nodes) (0.00 seconds)
+Iteration 90: 950 states (29 nodes) (0.00 seconds)
+Iteration 91: 960 states (27 nodes) (0.00 seconds)
+Iteration 92: 970 states (31 nodes) (0.00 seconds)
+Iteration 93: 982 states (29 nodes) (0.00 seconds)
+Iteration 94: 992 states (27 nodes) (0.00 seconds)
+Iteration 95: 1002 states (30 nodes) (0.00 seconds)
+Iteration 96: 1018 states (37 nodes) (0.00 seconds)
+Iteration 97: 1032 states (44 nodes) (0.00 seconds)
+Iteration 98: 1042 states (44 nodes) (0.00 seconds)
+Iteration 99: 1050 states (52 nodes) (0.00 seconds)
+Iteration 100: 1056 states (53 nodes) (0.00 seconds)
+Iteration 101: 1064 states (52 nodes) (0.00 seconds)
+Iteration 102: 1068 states (61 nodes) (0.00 seconds)
+Iteration 103: 1072 states (62 nodes) (0.00 seconds)
+Iteration 104: 1080 states (53 nodes) (0.00 seconds)
+Iteration 105: 1084 states (65 nodes) (0.00 seconds)
+Iteration 106: 1088 states (66 nodes) (0.00 seconds)
+Iteration 107: 1096 states (57 nodes) (0.00 seconds)
+Iteration 108: 1100 states (65 nodes) (0.00 seconds)
+Iteration 109: 1104 states (66 nodes) (0.00 seconds)
+Iteration 110: 1112 states (57 nodes) (0.00 seconds)
+Iteration 111: 1116 states (65 nodes) (0.00 seconds)
+Iteration 112: 1120 states (66 nodes) (0.00 seconds)
+Iteration 113: 1128 states (56 nodes) (0.00 seconds)
+Iteration 114: 1132 states (66 nodes) (0.00 seconds)
+Iteration 115: 1136 states (67 nodes) (0.00 seconds)
+Iteration 116: 1144 states (57 nodes) (0.00 seconds)
+Iteration 117: 1148 states (66 nodes) (0.00 seconds)
+Iteration 118: 1152 states (67 nodes) (0.00 seconds)
+Iteration 119: 1160 states (58 nodes) (0.00 seconds)
+Iteration 120: 1164 states (66 nodes) (0.00 seconds)
+Iteration 121: 1168 states (67 nodes) (0.00 seconds)
+Iteration 122: 1176 states (58 nodes) (0.00 seconds)
+Iteration 123: 1180 states (66 nodes) (0.00 seconds)
+Iteration 124: 1184 states (67 nodes) (0.00 seconds)
+Iteration 125: 1192 states (57 nodes) (0.00 seconds)
+Iteration 126: 1196 states (66 nodes) (0.00 seconds)
+Iteration 127: 1200 states (67 nodes) (0.00 seconds)
+Iteration 128: 1208 states (56 nodes) (0.00 seconds)
+Iteration 129: 1212 states (66 nodes) (0.00 seconds)
+Iteration 130: 1216 states (67 nodes) (0.00 seconds)
+Iteration 131: 1224 states (58 nodes) (0.00 seconds)
+Iteration 132: 1228 states (66 nodes) (0.00 seconds)
+Iteration 133: 1232 states (67 nodes) (0.00 seconds)
+Iteration 134: 1240 states (58 nodes) (0.00 seconds)
+Iteration 135: 1244 states (66 nodes) (0.00 seconds)
+Iteration 136: 1248 states (67 nodes) (0.00 seconds)
+Iteration 137: 1256 states (56 nodes) (0.00 seconds)
+Iteration 138: 1260 states (67 nodes) (0.00 seconds)
+Iteration 139: 1264 states (68 nodes) (0.00 seconds)
+Iteration 140: 1272 states (58 nodes) (0.00 seconds)
+Iteration 141: 1276 states (67 nodes) (0.00 seconds)
+Iteration 142: 1280 states (68 nodes) (0.00 seconds)
+Iteration 143: 1288 states (59 nodes) (0.00 seconds)
+Iteration 144: 1292 states (67 nodes) (0.00 seconds)
+Iteration 145: 1296 states (68 nodes) (0.00 seconds)
+Iteration 146: 1304 states (59 nodes) (0.00 seconds)
+Iteration 147: 1308 states (67 nodes) (0.00 seconds)
+Iteration 148: 1312 states (68 nodes) (0.00 seconds)
+Iteration 149: 1320 states (58 nodes) (0.00 seconds)
+Iteration 150: 1324 states (67 nodes) (0.00 seconds)
+Iteration 151: 1328 states (68 nodes) (0.00 seconds)
+Iteration 152: 1336 states (56 nodes) (0.00 seconds)
+Iteration 153: 1340 states (67 nodes) (0.00 seconds)
+Iteration 154: 1344 states (68 nodes) (0.00 seconds)
+Iteration 155: 1352 states (59 nodes) (0.00 seconds)
+Iteration 156: 1356 states (67 nodes) (0.00 seconds)
+Iteration 157: 1360 states (68 nodes) (0.00 seconds)
+Iteration 158: 1368 states (59 nodes) (0.00 seconds)
+Iteration 159: 1372 states (67 nodes) (0.00 seconds)
+Iteration 160: 1376 states (68 nodes) (0.00 seconds)
+Iteration 161: 1384 states (57 nodes) (0.00 seconds)
+Iteration 162: 1388 states (67 nodes) (0.00 seconds)
+Iteration 163: 1392 states (68 nodes) (0.00 seconds)
+Iteration 164: 1400 states (58 nodes) (0.00 seconds)
+Iteration 165: 1404 states (67 nodes) (0.00 seconds)
+Iteration 166: 1408 states (68 nodes) (0.00 seconds)
+Iteration 167: 1416 states (59 nodes) (0.00 seconds)
+Iteration 168: 1420 states (67 nodes) (0.00 seconds)
+Iteration 169: 1424 states (68 nodes) (0.00 seconds)
+Iteration 170: 1432 states (59 nodes) (0.00 seconds)
+Iteration 171: 1436 states (67 nodes) (0.00 seconds)
+Iteration 172: 1440 states (68 nodes) (0.00 seconds)
+Iteration 173: 1448 states (58 nodes) (0.00 seconds)
+Iteration 174: 1452 states (67 nodes) (0.00 seconds)
+Iteration 175: 1456 states (68 nodes) (0.00 seconds)
+Iteration 176: 1464 states (57 nodes) (0.00 seconds)
+Iteration 177: 1468 states (67 nodes) (0.00 seconds)
+Iteration 178: 1472 states (68 nodes) (0.00 seconds)
+Iteration 179: 1480 states (59 nodes) (0.00 seconds)
+Iteration 180: 1484 states (67 nodes) (0.00 seconds)
+Iteration 181: 1488 states (68 nodes) (0.00 seconds)
+Iteration 182: 1496 states (59 nodes) (0.00 seconds)
+Iteration 183: 1500 states (67 nodes) (0.00 seconds)
+Iteration 184: 1504 states (68 nodes) (0.00 seconds)
+Iteration 185: 1512 states (56 nodes) (0.00 seconds)
+Iteration 186: 1516 states (65 nodes) (0.00 seconds)
+Iteration 187: 1520 states (66 nodes) (0.00 seconds)
+Iteration 188: 1528 states (56 nodes) (0.00 seconds)
+Iteration 189: 1532 states (64 nodes) (0.00 seconds)
+Iteration 190: 1536 states (65 nodes) (0.00 seconds)
+Iteration 191: 1544 states (56 nodes) (0.00 seconds)
+Iteration 192: 1548 states (58 nodes) (0.00 seconds)
+Iteration 193: 1552 states (57 nodes) (0.00 seconds)
+Iteration 194: 1560 states (57 nodes) (0.00 seconds)
+Iteration 195: 1564 states (65 nodes) (0.00 seconds)
+Iteration 196: 1568 states (66 nodes) (0.00 seconds)
+Iteration 197: 1576 states (57 nodes) (0.00 seconds)
+Iteration 198: 1580 states (66 nodes) (0.00 seconds)
+Iteration 199: 1584 states (67 nodes) (0.00 seconds)
+Iteration 200: 1592 states (57 nodes) (0.00 seconds)
+Iteration 201: 1596 states (68 nodes) (0.00 seconds)
+Iteration 202: 1600 states (69 nodes) (0.00 seconds)
+Iteration 203: 1608 states (60 nodes) (0.00 seconds)
+Iteration 204: 1612 states (68 nodes) (0.00 seconds)
+Iteration 205: 1616 states (69 nodes) (0.00 seconds)
+Iteration 206: 1624 states (60 nodes) (0.00 seconds)
+Iteration 207: 1628 states (68 nodes) (0.00 seconds)
+Iteration 208: 1632 states (69 nodes) (0.00 seconds)
+Iteration 209: 1640 states (58 nodes) (0.00 seconds)
+Iteration 210: 1644 states (68 nodes) (0.00 seconds)
+Iteration 211: 1648 states (69 nodes) (0.00 seconds)
+Iteration 212: 1656 states (59 nodes) (0.00 seconds)
+Iteration 213: 1660 states (68 nodes) (0.00 seconds)
+Iteration 214: 1664 states (69 nodes) (0.00 seconds)
+Iteration 215: 1672 states (60 nodes) (0.00 seconds)
+Iteration 216: 1676 states (68 nodes) (0.00 seconds)
+Iteration 217: 1680 states (69 nodes) (0.00 seconds)
+Iteration 218: 1688 states (60 nodes) (0.00 seconds)
+Iteration 219: 1692 states (68 nodes) (0.00 seconds)
+Iteration 220: 1696 states (69 nodes) (0.00 seconds)
+Iteration 221: 1704 states (59 nodes) (0.00 seconds)
+Iteration 222: 1708 states (68 nodes) (0.00 seconds)
+Iteration 223: 1712 states (69 nodes) (0.00 seconds)
+Iteration 224: 1720 states (58 nodes) (0.00 seconds)
+Iteration 225: 1724 states (68 nodes) (0.00 seconds)
+Iteration 226: 1728 states (69 nodes) (0.00 seconds)
+Iteration 227: 1736 states (60 nodes) (0.00 seconds)
+Iteration 228: 1740 states (68 nodes) (0.00 seconds)
+Iteration 229: 1744 states (69 nodes) (0.00 seconds)
+Iteration 230: 1752 states (60 nodes) (0.00 seconds)
+Iteration 231: 1756 states (68 nodes) (0.00 seconds)
+Iteration 232: 1760 states (69 nodes) (0.00 seconds)
+Iteration 233: 1768 states (57 nodes) (0.00 seconds)
+Iteration 234: 1772 states (68 nodes) (0.00 seconds)
+Iteration 235: 1776 states (69 nodes) (0.00 seconds)
+Iteration 236: 1784 states (59 nodes) (0.00 seconds)
+Iteration 237: 1788 states (68 nodes) (0.00 seconds)
+Iteration 238: 1792 states (69 nodes) (0.00 seconds)
+Iteration 239: 1800 states (60 nodes) (0.00 seconds)
+Iteration 240: 1804 states (68 nodes) (0.00 seconds)
+Iteration 241: 1808 states (69 nodes) (0.00 seconds)
+Iteration 242: 1816 states (60 nodes) (0.00 seconds)
+Iteration 243: 1820 states (68 nodes) (0.00 seconds)
+Iteration 244: 1824 states (69 nodes) (0.00 seconds)
+Iteration 245: 1832 states (59 nodes) (0.00 seconds)
+Iteration 246: 1836 states (68 nodes) (0.00 seconds)
+Iteration 247: 1840 states (69 nodes) (0.00 seconds)
+Iteration 248: 1848 states (57 nodes) (0.00 seconds)
+Iteration 249: 1852 states (67 nodes) (0.00 seconds)
+Iteration 250: 1856 states (68 nodes) (0.00 seconds)
+Iteration 251: 1864 states (59 nodes) (0.00 seconds)
+Iteration 252: 1868 states (67 nodes) (0.00 seconds)
+Iteration 253: 1872 states (68 nodes) (0.00 seconds)
+Iteration 254: 1880 states (59 nodes) (0.00 seconds)
+Iteration 255: 1884 states (67 nodes) (0.00 seconds)
+Iteration 256: 1888 states (68 nodes) (0.00 seconds)
+Iteration 257: 1896 states (57 nodes) (0.00 seconds)
+Iteration 258: 1900 states (67 nodes) (0.00 seconds)
+Iteration 259: 1904 states (68 nodes) (0.00 seconds)
+Iteration 260: 1912 states (58 nodes) (0.00 seconds)
+Iteration 261: 1916 states (67 nodes) (0.00 seconds)
+Iteration 262: 1920 states (68 nodes) (0.00 seconds)
+Iteration 263: 1928 states (59 nodes) (0.00 seconds)
+Iteration 264: 1932 states (67 nodes) (0.00 seconds)
+Iteration 265: 1936 states (68 nodes) (0.00 seconds)
+Iteration 266: 1944 states (59 nodes) (0.00 seconds)
+Iteration 267: 1948 states (67 nodes) (0.00 seconds)
+Iteration 268: 1952 states (68 nodes) (0.00 seconds)
+Iteration 269: 1960 states (58 nodes) (0.00 seconds)
+Iteration 270: 1964 states (67 nodes) (0.00 seconds)
+Iteration 271: 1968 states (68 nodes) (0.00 seconds)
+Iteration 272: 1976 states (57 nodes) (0.00 seconds)
+Iteration 273: 1980 states (66 nodes) (0.00 seconds)
+Iteration 274: 1984 states (67 nodes) (0.00 seconds)
+Iteration 275: 1992 states (58 nodes) (0.00 seconds)
+Iteration 276: 1996 states (66 nodes) (0.00 seconds)
+Iteration 277: 2000 states (67 nodes) (0.00 seconds)
+Iteration 278: 2008 states (58 nodes) (0.00 seconds)
+Iteration 279: 2012 states (66 nodes) (0.00 seconds)
+Iteration 280: 2016 states (67 nodes) (0.00 seconds)
+Iteration 281: 2024 states (54 nodes) (0.00 seconds)
+Iteration 282: 2028 states (62 nodes) (0.00 seconds)
+Iteration 283: 2032 states (63 nodes) (0.00 seconds)
+Iteration 284: 2040 states (53 nodes) (0.00 seconds)
+Iteration 285: 2044 states (54 nodes) (0.00 seconds)
+Iteration 286: 2048 states (53 nodes) (0.00 seconds)
+Iteration 287: 2056 states (44 nodes) (0.00 seconds)
+Iteration 288: 2060 states (45 nodes) (0.00 seconds)
+Iteration 289: 2064 states (42 nodes) (0.00 seconds)
+
+Reachability (BFS): 289 iterations in 0.02 seconds (average 0.000059, setup 0.00)
+
+Time for model construction: 0.046 seconds.
+
+Type:        MDP
+States:      2064 (1 initial)
+Transitions: 3852
+Choices:     3088
+
+Transition matrix: 443 nodes (3 terminal), 3852 minterms, vars: 13r/13c/2nd
+
+Probability bound in formula is 0/1 so not computing exact probabilities...
+
+Prob0E: 104 iterations in 0.02 seconds (average 0.000163, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 2064, no = 0, maybe = 0
+
+Property satisfied in 1 of 1 initial states.
+
+Time for model checking: 0.017 seconds.
+
+Result: true (property satisfied in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "c2": Pmin=? [ F "finished"&"all_coins_equal_1" ]
+Model constants: K=16
+
+Prob0E: 197 iterations in 0.02 seconds (average 0.000102, setup 0.00)
+
+Prob1A: 191 iterations in 0.01 seconds (average 0.000068, setup 0.00)
+
+yes = 15, no = 542, maybe = 1507
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=2, levels=13, nodes=474] [22.2 KB]
+Adding sparse bits... [levels=13-13, num=2, compact=2/2] [16.3 KB]
+Creating vector for yes... [dist=2, compact] [4.0 KB]
+Allocating iteration vectors... [3 x 16.1 KB]
+TOTAL: [91.0 KB]
+
+Starting iterations...
+
+Iterative method: 10000 iterations in 0.40 seconds (average 0.000040, setup 0.00)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+---------------------------------------------------------------------
+
+Model checking: "disagree": Pmax=? [ F "finished"&!"agree" ]
+Model constants: K=16
+
+Prob0A: 291 iterations in 0.04 seconds (average 0.000127, setup 0.00)
+
+Prob1E: 6115 iterations in 0.56 seconds (average 0.000091, setup 0.00)
+
+yes = 12, no = 30, maybe = 2022
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=2, levels=13, nodes=512] [24.0 KB]
+Adding sparse bits... [levels=13-13, num=2, compact=2/2] [18.9 KB]
+Creating vector for yes... [dist=2, compact] [4.0 KB]
+Allocating iteration vectors... [3 x 16.1 KB]
+TOTAL: [95.3 KB]
+
+Starting iterations...
+
+Iterative method: 10000 iterations in 0.46 seconds (average 0.000046, setup 0.00)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+---------------------------------------------------------------------
+
+Model checking: "steps_max": R{"steps"}max=? [ F "finished" ]
+Model constants: K=16
+
+Prob0E: 104 iterations in 0.02 seconds (average 0.000154, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 8, inf = 0, maybe = 2056
+
+Computing remaining rewards...
+Switching engine since hybrid engine does yet support this computation...
+Engine: Sparse
+
+Building sparse matrix (transitions)... [n=2064, nc=3080, nnz=3844, k=2] [65.1 KB]
+Building sparse matrix (transition rewards)... [n=2064, nc=3080, nnz=0, k=2] [20.1 KB]
+Creating vector for state rewards... [16.1 KB]
+Creating vector for inf... [16.1 KB]
+Allocating iteration vectors... [2 x 16.1 KB]
+TOTAL: [149.7 KB]
+
+Starting iterations...
+
+Iterative method: 10000 iterations in 0.48 seconds (average 0.000048, setup 0.00)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+---------------------------------------------------------------------
+
+Model checking: "steps_min": R{"steps"}min=? [ F "finished" ]
+Model constants: K=16
+
+Prob0A: 101 iterations in 0.01 seconds (average 0.000139, setup 0.00)
+
+Prob1E: 102 iterations in 0.01 seconds (average 0.000088, setup 0.00)
+
+Warning: PRISM hasn't checked for zero-reward loops.
+Your minimum rewards may be too low...
+
+goal = 8, inf = 0, maybe = 2056
+
+Computing remaining rewards...
+Switching engine since hybrid engine does yet support this computation...
+Engine: Sparse
+
+Building sparse matrix (transitions)... [n=2064, nc=3080, nnz=3844, k=2] [65.1 KB]
+Building sparse matrix (transition rewards)... [n=2064, nc=3080, nnz=0, k=2] [20.1 KB]
+Creating vector for state rewards... [16.1 KB]
+Creating vector for inf... [16.1 KB]
+Allocating iteration vectors... [2 x 16.1 KB]
+TOTAL: [149.7 KB]
+
+Starting iterations...
+
+Iterative method: 10000 iterations in 0.51 seconds (average 0.000051, setup 0.00)
+
+Error: Iterative method did not converge within 10000 iterations.
+Consider using a different numerical method or increasing the maximum number of iterations.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.
+

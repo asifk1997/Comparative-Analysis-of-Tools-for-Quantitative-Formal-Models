@@ -1,0 +1,50 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+leader_sync.3-2.v1.jani:model: info: leader_sync.3-2 is a DTMC model.
+leader_sync.3-2.v1.jani:variables[3]: info: Expanding variable "s1" into 4 locations in automaton "process1".
+leader_sync.3-2.v1.jani:variables[7]: info: Expanding variable "s2" into 4 locations in automaton "process2".
+leader_sync.3-2.v1.jani:variables[11]: info: Expanding variable "s3" into 4 locations in automaton "process3".
+leader_sync.3-2.v1.jani: info: Need 24 bytes per state.
+leader_sync.3-2.v1.jani: info: Explored 26 states.
+
+Peak memory usage: 53 MB
+Analysis results for leader_sync.3-2.v1.jani
+
++ State space exploration
+  State size:  24 bytes
+  States:      26
+  Transitions: 26
+  Branches:    33
+  Rate:        170 states/s
+  Time:        0.2 s
+
++ Property eventually_elected
+  Result:      True
+  Time:        0.2 s
+  Probability: 1
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          26
+    Time for min. prob. 1 states: 0.0 s
+
++ Property time
+  Value:  1.3333332538604736
+  Bounds: [1.3333332538604736, infinity)
+  Time:   0.3 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          26
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 7.152559078349847E-07
+    Iterations:  12
+    Time:        0.0 s
+

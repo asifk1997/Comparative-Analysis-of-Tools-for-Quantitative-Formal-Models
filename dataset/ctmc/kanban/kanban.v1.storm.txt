@@ -1,0 +1,30 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:33:30 2021
+Command line arguments: --jani /home/asif/dataset/ctmc/kanban/kanban.v1.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.022s.
+
+Time for model construction: 1.161s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	4600
+Transitions: 	28120
+Reward Models:  throughput
+State Labels: 	2 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "throughput": R[exp]{"throughput"}min=? [LRA] ...
+Result (for initial states): 0.1738717086
+Time for model checking: 0.171s.
+
+Performance statistics:
+  * peak memory usage: 125MB
+  * CPU time: 1.397s
+  * wallclock time: 1.365s

@@ -1,0 +1,10 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+herman.3.v1.jani:model: info: herman.3 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+herman.3.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+herman.3.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+herman.3.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+herman.3.v1.jani:variables[: error: Complex initial states specifications are not yet supported.

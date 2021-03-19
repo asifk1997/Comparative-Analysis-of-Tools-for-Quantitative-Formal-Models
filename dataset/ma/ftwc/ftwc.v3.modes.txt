@@ -1,0 +1,17 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+ftwc.v3.jani:model: info: ftwc is an MA model and will be simulated as an MA.
+ftwc.v3.jani: info: Using default value of 0.95 for the confidence parameter.
+ftwc.v3.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+ftwc.v3.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+ftwc.v3.jani:properties[5]: warning: Ignoring property "SmaxReach" because the transient or evaluation duration for long-run average value simulation is not configured.
+ftwc.v3.jani:model: error: Encountered structural nondeterminism between startRepairWorkstation?/startRepairLeftWorkstation! and startRepairWorkstation?/startRepairRightWorkstation!.
+
+Peak memory usage: 57 MB
+Analysis results for ftwc.v3.jani
+Status:          Error
+Simulation time: 0.1 s
+

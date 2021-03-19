@@ -1,0 +1,1 @@
+MALICIOUS = 20, CD = 6

@@ -1,0 +1,10 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+fms.v1.jani:model: info: fms is a CTMC model and will be simulated as an MA.
+fms.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+fms.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+fms.v1.jani:properties[0]: warning: Ignoring property "productivity" because the transient or evaluation duration for long-run average value simulation is not configured.
+fms.v1.jani: error: There are no compatible properties to evaluate.

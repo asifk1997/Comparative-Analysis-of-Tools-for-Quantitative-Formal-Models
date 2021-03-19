@@ -1,0 +1,30 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+crowds.v1.jani:model: info: crowds is a DTMC model.
+crowds.v1.jani: info: Need 40 bytes per state.
+crowds.v1.jani: info: Explored 1145 states.
+
+Peak memory usage: 54 MB
+Analysis results for crowds.v1.jani
+
++ State space exploration
+  State size:  40 bytes
+  States:      1145
+  Transitions: 1145
+  Branches:    1955
+  Rate:        24362 states/s
+  Time:        0.1 s
+
++ Property positive
+  Probability: 0.052962475537421665
+  Bounds:      [0.052962475537421665, 1]
+  Time:        0.2 s
+
+  + Value iteration
+    Final error: 8.332596829787227E-07
+    Iterations:  53
+    Time:        0.0 s
+

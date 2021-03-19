@@ -1,0 +1,47 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+leader_sync.3-2.v1.jani:model: info: leader_sync.3-2 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+leader_sync.3-2.v1.jani:variables[3]: info: Expanding variable "s1" into 4 locations in automaton "process1".
+leader_sync.3-2.v1.jani:variables[7]: info: Expanding variable "s2" into 4 locations in automaton "process2".
+leader_sync.3-2.v1.jani:variables[11]: info: Expanding variable "s3" into 4 locations in automaton "process3".
+leader_sync.3-2.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+leader_sync.3-2.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+leader_sync.3-2.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+
+Peak memory usage: 57 MB
+Analysis results for leader_sync.3-2.v1.jani
+Status:          Finished
+Simulation time: 0.5 s
+
++ Property Property "eventually_elected"
+  Decision:              True
+  Estimated probability: 1
+  Runs used:             370
+  Run type:              MDP
+  Status:                Finished
+
+  + Error bounds
+    Statement:    SPRT: P(error) ≤ α if true value outside indifference
+    α:            0.050000000000000044
+    Indifference: [0.99, 1]
+
++ Property Property "time"
+  Estimated value:     1.338295388207814
+  Confidence interval: [1.328297784232204, 1.348292992183424]
+  Runs used:           17130
+  Run type:            MDP
+  Status:              Finished
+
+  + Sample data
+    Mean:     1.338295388207814
+    Variance: 0.44571067927699826
+    Skewness: 2.3672764112245073
+    Kurtosis: 9.784639418811839
+
+  + Error bounds
+    Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+    α:         0.050000000000000044
+

@@ -1,0 +1,10 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+erlang.v2.jani:model: info: erlang is an MA model.
+erlang.v2.jani: info: Need 4 bytes per state.
+erlang.v2.jani: info: Explored 20017 states.
+erlang.v2.jani:properties[1]: warning: Computing minimum expected reward in property "TminReach" without checking for zero-reward end components.
+erlang.v2.jani: info: Identified 15014 maximal end components.

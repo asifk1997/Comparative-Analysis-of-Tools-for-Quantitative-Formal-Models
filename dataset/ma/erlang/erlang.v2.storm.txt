@@ -1,0 +1,65 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:20:44 2021
+Command line arguments: --jani /home/asif/dataset/ma/erlang/erlang.v2.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.016s.
+
+Time for model construction: 1.113s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	20027
+Transitions: 	20033
+Choices: 	20030
+Markovian St.: 	10014
+Max. Rate: 	10
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * goal -> 10018 item(s)
+   * !(goal) -> 10009 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	Markov Automaton (sparse)
+States: 	20027
+Transitions: 	20033
+Choices: 	20030
+Markovian St.: 	10014
+Max. Rate: 	10
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * goal -> 10018 item(s)
+   * !(goal) -> 10009 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "PminReach": Pmin=? [F goal] ...
+Result (for initial states): 0.5
+Time for model checking: 0.020s.
+
+Model checking property "TminReach": T[exp]min=? [F goal] ...
+Result (for initial states): 501
+Time for model checking: 6.524s.
+
+Model checking property "PmaxReachBound": Pmax=? [true U<=5 goal] ...
+Result (for initial states): 0.479786159
+Time for model checking: 1.514s.
+
+Model checking property "SmaxNotReach": LRAmax=? [!(goal)] ...
+Result (for initial states): 0.5
+Time for model checking: 0.221s.
+
+Performance statistics:
+  * peak memory usage: 125MB
+  * CPU time: 9.297s
+  * wallclock time: 9.419s

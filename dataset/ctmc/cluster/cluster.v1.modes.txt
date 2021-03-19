@@ -1,0 +1,95 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+cluster.v1.jani:model: info: cluster is a CTMC model and will be simulated as an MA.
+cluster.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+cluster.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+cluster.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+cluster.v1.jani:properties[2]: warning: Ignoring property "premium_steady" because the transient or evaluation duration for long-run average value simulation is not configured.
+
+Peak memory usage: 57 MB
+Analysis results for cluster.v1.jani
+Status:          Finished
+Simulation time: 30.9 s
+
++ Properties "below_min", "operational", "qos1", "qos2", "qos3", "qos4" and "repairs"
+  Run type: MA
+  Status:   Finished
+
+  + Property Property "below_min"
+    Estimated value:     0
+    Confidence interval: [0, 0]
+    Runs used:           50
+
+    + Sample data
+      Mean: 0
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+
+  + Property Property "operational"
+    Estimated value:     0
+    Confidence interval: [0, 0]
+    Runs used:           50
+
+    + Sample data
+      Mean: 0
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+
+  + Property Property "qos1"
+    Estimated probability: 0.001639344262295082
+    Runs used:             610
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "qos2"
+    Estimated probability: 0
+    Runs used:             490
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "qos3"
+    Estimated probability: 1
+    Runs used:             490
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "qos4"
+    Estimated probability: 0
+    Runs used:             490
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "repairs"
+    Estimated value:     17.36413831399813
+    Confidence interval: [17.354138379179744, 17.374138248816514]
+    Runs used:           666310
+
+    + Sample data
+      Mean:     17.36413831399813
+      Variance: 17.3450073239487
+      Skewness: 0.24002373235432078
+      Kurtosis: 3.0547846735760196
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+

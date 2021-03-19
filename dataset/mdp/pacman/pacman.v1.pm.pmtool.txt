@@ -1,0 +1,84 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:27 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/mdp/pacman/pacman.v1.prism /home/asif/dataset/mdp/pacman/pacman.v1.props -const MAXSTEPS=5 -extrareachinfo
+
+Parsing model file "/home/asif/dataset/mdp/pacman/pacman.v1.prism"...
+
+Type:        MDP
+Modules:     arbiter ghost0 ghost1 pacman 
+Variables:   pMove steps xG0 yG0 dG0 xG1 yG1 dG1 xP yP dP 
+
+Parsing properties file "/home/asif/dataset/mdp/pacman/pacman.v1.props"...
+
+1 property:
+(1) "crash": Pmin=? [ F "Crash" ]
+
+---------------------------------------------------------------------
+
+Model checking: "crash": Pmin=? [ F "Crash" ]
+Model constants: MAXSTEPS=5
+
+Building model...
+Model constants: MAXSTEPS=5
+
+Computing reachable states...
+Iteration 1: 1 states (34 nodes) (0.15 seconds)
+Iteration 2: 4 states (51 nodes) (0.01 seconds)
+Iteration 3: 13 states (88 nodes) (0.01 seconds)
+Iteration 4: 19 states (138 nodes) (0.01 seconds)
+Iteration 5: 25 states (149 nodes) (0.01 seconds)
+Iteration 6: 31 states (187 nodes) (0.01 seconds)
+Iteration 7: 37 states (237 nodes) (0.01 seconds)
+Iteration 8: 43 states (257 nodes) (0.01 seconds)
+Iteration 9: 49 states (301 nodes) (0.01 seconds)
+Iteration 10: 73 states (362 nodes) (0.01 seconds)
+Iteration 11: 101 states (432 nodes) (0.01 seconds)
+Iteration 12: 135 states (515 nodes) (0.01 seconds)
+Iteration 13: 185 states (607 nodes) (0.01 seconds)
+Iteration 14: 235 states (691 nodes) (0.01 seconds)
+Iteration 15: 292 states (768 nodes) (0.01 seconds)
+Iteration 16: 365 states (860 nodes) (0.01 seconds)
+Iteration 17: 433 states (873 nodes) (0.01 seconds)
+Iteration 18: 498 states (928 nodes) (0.01 seconds)
+
+Reachability (BFS): 18 iterations in 0.32 seconds (average 0.017556, setup 0.00)
+
+Time for model construction: 7.231 seconds.
+
+Type:        MDP
+States:      498 (1 initial)
+Transitions: 620
+Choices:     592
+
+Transition matrix: 4113 nodes (7 terminal), 620 minterms, vars: 32r/32c/9nd
+
+Prob0E: 8 iterations in 0.01 seconds (average 0.000625, setup 0.00)
+
+Prob1A: 3 iterations in 0.00 seconds (average 0.000667, setup 0.00)
+
+yes = 99, no = 374, maybe = 25
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrices... [nm=3, levels=32, nodes=882] [41.3 KB]
+Adding sparse bits... [levels=32-32, num=3, compact=3/3] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [1.0 KB]
+Allocating iteration vectors... [3 x 3.9 KB]
+TOTAL: [55.7 KB]
+
+Starting iterations...
+
+Iterative method: 3 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.5511
+
+Time for model checking: 0.014 seconds.
+
+Result: 0.5511 (value in the initial state)
+

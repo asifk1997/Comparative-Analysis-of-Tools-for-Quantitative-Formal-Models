@@ -1,0 +1,112 @@
+[1616089884841] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1616089884841] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1616089884880] Starting to parse PRISM model...
+[1616089884972] Done parsing PRISM model
+[1616089884995] Starting model checking...
+[1616089884996] Analysing property s1
+[1616089885096] Starting to compute JANI explorer...
+[1616089885206] Starting to build initial states of JANI explorer...
+[1616089885211] Done building initial states of JANI explorer
+[1616089885212] Done building JANI explorer
+[1616089885220] Starting to build model...
+[1616089886216] Current number of states: 24,909; states/second: 24,908
+[1616089886961] Building model done. 73,728 states. Time for model exploration: 1 seconds.
+[1616089887535] Starting iteration...
+[1616089888540] Current number of iterations: 733; Maximal difference: 0.9340699331823501. Time passed: 1 seconds.
+[1616089889541] Current number of iterations: 1,535; Maximal difference: 0.7717303337245056. Time passed: 2 seconds.
+[1616089890541] Current number of iterations: 2,339; Maximal difference: 0.3484874267127225. Time passed: 3 seconds.
+[1616089891542] Current number of iterations: 3,144; Maximal difference: 0.1296671990694449. Time passed: 4 seconds.
+[1616089892543] Current number of iterations: 3,947; Maximal difference: 0.06829355288522265. Time passed: 5 seconds.
+[1616089893543] Current number of iterations: 4,750; Maximal difference: 0.033992232671835154. Time passed: 6 seconds.
+[1616089894544] Current number of iterations: 5,552; Maximal difference: 0.016724099820521587. Time passed: 7 seconds.
+[1616089895545] Current number of iterations: 6,354; Maximal difference: 0.008696839621734398. Time passed: 8 seconds.
+[1616089896545] Current number of iterations: 7,156; Maximal difference: 0.004484699412842019. Time passed: 9 seconds.
+[1616089897546] Current number of iterations: 7,937; Maximal difference: 0.0023560539693789906. Time passed: 10 seconds.
+[1616089898546] Current number of iterations: 8,742; Maximal difference: 0.001221458236386752. Time passed: 11 seconds.
+[1616089899547] Current number of iterations: 9,547; Maximal difference: 6.341273663110769E-4. Time passed: 12 seconds.
+[1616089900548] Current number of iterations: 10,351; Maximal difference: 3.295321428140596E-4. Time passed: 13 seconds.
+[1616089901549] Current number of iterations: 11,154; Maximal difference: 1.7153416206383554E-4. Time passed: 14 seconds.
+[1616089902549] Current number of iterations: 11,959; Maximal difference: 8.919665333451121E-5. Time passed: 15 seconds.
+[1616089903550] Current number of iterations: 12,757; Maximal difference: 4.664775406126864E-5. Time passed: 16 seconds.
+[1616089904551] Current number of iterations: 13,559; Maximal difference: 2.432026917631447E-5. Time passed: 17 seconds.
+[1616089905552] Current number of iterations: 14,360; Maximal difference: 1.2691361916949973E-5. Time passed: 18 seconds.
+[1616089906553] Current number of iterations: 15,162; Maximal difference: 6.6177592543681385E-6. Time passed: 19 seconds.
+[1616089907553] Current number of iterations: 15,965; Maximal difference: 3.4480199246900156E-6. Time passed: 20 seconds.
+[1616089908554] Current number of iterations: 16,768; Maximal difference: 1.7965462575375568E-6. Time passed: 21 seconds.
+[1616089909555] Current number of iterations: 17,571; Maximal difference: 9.360755939269438E-7. Time passed: 22 seconds.
+[1616089910555] Current number of iterations: 18,373; Maximal difference: 4.881330823991448E-7. Time passed: 23 seconds.
+[1616089911556] Current number of iterations: 19,176; Maximal difference: 2.543397386034485E-7. Time passed: 24 seconds.
+[1616089912557] Current number of iterations: 19,977; Maximal difference: 1.327398422290571E-7. Time passed: 25 seconds.
+[1616089913558] Current number of iterations: 20,779; Maximal difference: 6.922164175193757E-8. Time passed: 26 seconds.
+[1616089914558] Current number of iterations: 21,582; Maximal difference: 3.607010512496345E-8. Time passed: 27 seconds.
+[1616089915559] Current number of iterations: 22,385; Maximal difference: 1.8794708012137562E-8. Time passed: 28 seconds.
+[1616089916560] Current number of iterations: 23,188; Maximal difference: 9.793438948690891E-9. Time passed: 29 seconds.
+[1616089917561] Current number of iterations: 23,991; Maximal difference: 5.104084266349673E-9. Time passed: 30 seconds.
+[1616089918562] Current number of iterations: 24,792; Maximal difference: 2.665274223545566E-9. Time passed: 31 seconds.
+[1616089919562] Current number of iterations: 25,594; Maximal difference: 1.3915268937125802E-9. Time passed: 32 seconds.
+[1616089920563] Current number of iterations: 26,396; Maximal difference: 7.28960003471002E-10. Time passed: 33 seconds.
+[1616089921564] Current number of iterations: 27,197; Maximal difference: 3.8062353269197047E-10. Time passed: 34 seconds.
+[1616089922565] Current number of iterations: 27,999; Maximal difference: 1.9872459233738482E-10. Time passed: 35 seconds.
+[1616089923566] Current number of iterations: 28,803; Maximal difference: 1.064108801074326E-10. Time passed: 36 seconds.
+[1616089924566] Current number of iterations: 29,607; Maximal difference: 5.775291356258094E-11. Time passed: 37 seconds.
+[1616089924758] Done. Did 29,756 iterations in 37 seconds.
+[1616089924768] Analysing property s1_before_s2
+[1616089924771] Starting to compute JANI explorer...
+[1616089924792] Starting to build initial states of JANI explorer...
+[1616089924793] Done building initial states of JANI explorer
+[1616089924793] Done building JANI explorer
+[1616089924794] Starting to build model...
+[1616089925794] Current number of states: 69,838; states/second: 69,837
+[1616089925835] Building model done. 73,728 states. Time for model exploration: 1 seconds.
+[1616089926297] Starting iteration...
+[1616089927300] Current number of iterations: 1,405; Maximal difference: 6.880401058972918E-5. Time passed: 1 seconds.
+[1616089928300] Current number of iterations: 2,817; Maximal difference: 3.510126533434743E-6. Time passed: 2 seconds.
+[1616089929301] Current number of iterations: 4,234; Maximal difference: 1.8790324962658644E-7. Time passed: 3 seconds.
+[1616089930301] Current number of iterations: 5,650; Maximal difference: 1.0184973975313483E-8. Time passed: 4 seconds.
+[1616089931303] Current number of iterations: 7,055; Maximal difference: 5.647732281843787E-10. Time passed: 5 seconds.
+[1616089931896] Done. Did 7,897 iterations in 5 seconds.
+[1616089931906] Analysing property served
+[1616089931909] Starting to compute JANI explorer...
+[1616089931927] Starting to build initial states of JANI explorer...
+[1616089931929] Done building initial states of JANI explorer
+[1616089931929] Done building JANI explorer
+[1616089931929] Starting to build model...
+[1616089932929] Current number of states: 73,684; states/second: 73,684
+[1616089932930] Building model done. 73,728 states. Time for model exploration: 1 seconds.
+[1616089934362] Performed 37 of 3,778 iterations (0.98%); Time passed: 1 seconds.
+[1616089935393] Performed 65 of 3,778 iterations (1.72%); Time passed: 2 seconds.
+[1616089936394] Performed 91 of 3,778 iterations (2.41%); Time passed: 3 seconds.
+[1616089937395] Performed 498 of 3,778 iterations (13.18%); Time passed: 4 seconds.
+[1616089938396] Performed 1,719 of 3,778 iterations (45.50%); Time passed: 5 seconds.
+[1616089939396] Performed 2,940 of 3,778 iterations (77.82%); Time passed: 6 seconds.
+[1616089940095] Analysing property station1_polled
+[1616089940099] Starting to compute JANI explorer...
+[1616089940112] Starting to build initial states of JANI explorer...
+[1616089940114] Done building initial states of JANI explorer
+[1616089940114] Done building JANI explorer
+[1616089940114] Starting to build model...
+[1616089941114] Current number of states: 72,997; states/second: 72,996
+[1616089941121] Building model done. 73,728 states. Time for model exploration: 1 seconds.
+[1616089942334] Performed 1,256 of 3,778 iterations (33.25%); Time passed: 1 seconds.
+[1616089943335] Performed 2,439 of 3,778 iterations (64.56%); Time passed: 2 seconds.
+[1616089944335] Performed 3,579 of 3,778 iterations (94.73%); Time passed: 3 seconds.
+[1616089944539] Analysing property waiting
+[1616089944542] Starting to compute JANI explorer...
+[1616089944554] Starting to build initial states of JANI explorer...
+[1616089944555] Done building initial states of JANI explorer
+[1616089944556] Done building JANI explorer
+[1616089944556] Starting to build model...
+[1616089945556] Current number of states: 72,160; states/second: 72,160
+[1616089945570] Building model done. 73,728 states. Time for model exploration: 1 seconds.
+[1616089946777] Performed 27 of 3,778 iterations (0.71%); Time passed: 1 seconds.
+[1616089947778] Performed 54 of 3,778 iterations (1.43%); Time passed: 2 seconds.
+[1616089948779] Performed 80 of 3,778 iterations (2.12%); Time passed: 3 seconds.
+[1616089949779] Performed 407 of 3,778 iterations (10.77%); Time passed: 4 seconds.
+[1616089950780] Performed 1,631 of 3,778 iterations (43.17%); Time passed: 5 seconds.
+[1616089951781] Performed 2,859 of 3,778 iterations (75.67%); Time passed: 6 seconds.
+[1616089952551] Finished model checking. Time required: 67 seconds
+[1616089952562] s1: 0.1363292
+[1616089952563] s1_before_s2: 0.5408111
+[1616089952563] served: 0.9394469
+[1616089952563] station1_polled: 1.0000000
+[1616089952563] waiting: 1.4611103

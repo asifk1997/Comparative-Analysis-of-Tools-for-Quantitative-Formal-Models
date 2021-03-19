@@ -1,0 +1,16 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+csma.2-2.v1.jani:model: info: csma.2-2 is an MDP model and will be simulated as an MDP.
+csma.2-2.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+csma.2-2.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+csma.2-2.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+csma.2-2.v1.jani:model: error: Encountered structural nondeterminism between send1 and send2.
+
+Peak memory usage: 56 MB
+Analysis results for csma.2-2.v1.jani
+Status:          Error
+Simulation time: 0.1 s
+

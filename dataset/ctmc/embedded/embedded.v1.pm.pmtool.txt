@@ -1,0 +1,501 @@
+PRISM
+=====
+
+Version: 4.6
+Date: Thu Mar 18 22:32:39 IST 2021
+Hostname: asif-Predator-PH315-51
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism /home/asif/dataset/ctmc/embedded/embedded.v1.prism /home/asif/dataset/ctmc/embedded/embedded.v1.props -const 'MAX_COUNT=2,T=12' -extrareachinfo
+
+Parsing model file "/home/asif/dataset/ctmc/embedded/embedded.v1.prism"...
+
+Type:        CTMC
+Modules:     sensors proci actuators proco procm bus 
+Variables:   s i a o m count comp reqi reqo 
+
+Parsing properties file "/home/asif/dataset/ctmc/embedded/embedded.v1.props"...
+
+14 properties:
+(1) "actuators": P=? [ !"down" U "fail_actuators" ]
+(2) "actuators_T": P=? [ !"down" U<=(T*3600) "fail_sensors" ]
+(3) "danger_T": R{"danger"}=? [ C<=(T*3600) ]
+(4) "danger_time": R{"danger"}=? [ F "down" ]
+(5) "down_T": R{"down"}=? [ C<=(T*3600) ]
+(6) "failure_T": P=? [ F<=(T*3600) "down" ]
+(7) "io": P=? [ !"down" U "fail_io" ]
+(8) "io_T": P=? [ !"down" U<=(T*3600) "fail_io" ]
+(9) "main": P=? [ !"down" U "fail_main" ]
+(10) "main_T": P=? [ !"down" U<=(T*3600) "fail_main" ]
+(11) "sensors": P=? [ !"down" U "fail_sensors" ]
+(12) "sensors_T": P=? [ !"down" U<=(T*3600) "fail_sensors" ]
+(13) "up_T": R{"up"}=? [ C<=(T*3600) ]
+(14) "up_time": R{"up"}=? [ F "down" ]
+
+---------------------------------------------------------------------
+
+Model checking: "actuators": P=? [ !"down" U "fail_actuators" ]
+Model constants: MAX_COUNT=2
+
+Building model...
+Model constants: MAX_COUNT=2
+
+Computing reachable states...
+Iteration 1: 1 states (16 nodes) (0.00 seconds)
+Iteration 2: 8 states (23 nodes) (0.00 seconds)
+Iteration 3: 34 states (47 nodes) (0.00 seconds)
+Iteration 4: 108 states (82 nodes) (0.00 seconds)
+Iteration 5: 271 states (112 nodes) (0.00 seconds)
+Iteration 6: 548 states (134 nodes) (0.00 seconds)
+Iteration 7: 930 states (141 nodes) (0.00 seconds)
+Iteration 8: 1393 states (141 nodes) (0.00 seconds)
+Iteration 9: 1915 states (136 nodes) (0.00 seconds)
+Iteration 10: 2451 states (123 nodes) (0.00 seconds)
+Iteration 11: 2917 states (106 nodes) (0.00 seconds)
+Iteration 12: 3239 states (85 nodes) (0.00 seconds)
+Iteration 13: 3406 states (63 nodes) (0.00 seconds)
+Iteration 14: 3466 states (51 nodes) (0.00 seconds)
+Iteration 15: 3478 states (44 nodes) (0.00 seconds)
+
+Reachability (BFS): 15 iterations in 0.01 seconds (average 0.000533, setup 0.00)
+
+Time for model construction: 0.019 seconds.
+
+Type:        CTMC
+States:      3478 (1 initial)
+Transitions: 14639
+
+Rate matrix: 1144 nodes (9 terminal), 14639 minterms, vars: 14r/14c
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 4 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+yes = 434, no = 2660, maybe = 384
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=5222] [244.8 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [14.1 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=2, compact] [6.8 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [326.9 KB]
+
+Starting iterations...
+
+Jacobi: 632 iterations in 0.03 seconds (average 0.000033, setup 0.01)
+
+Value in the initial state: 0.0876739609485826
+
+Time for model checking: 0.04 seconds.
+
+Result: 0.0876739609485826 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "actuators_T": P=? [ !"down" U<=(T*3600) "fail_sensors" ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 912 of 3478 (26.2%)
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1050] [49.2 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [21.6 KB]
+Creating vector for diagonals... [dist=35, compact] [7.1 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [159.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.16 seconds (average 0.000038, setup 0.00)
+
+Value in the initial state: 8.058411395771991E-4
+
+Time for model checking: 0.162 seconds.
+
+Result: 8.058411395771991E-4 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "danger_T": R{"danger"}=? [ C<=(T*3600) ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1535] [72.0 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [60.6 KB]
+Creating vector for diagonals... [dist=68, compact] [7.3 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [221.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.53 seconds (average 0.000125, setup 0.01)
+
+Value in the initial state: 0.00826962266496371
+
+Time for model checking: 0.536 seconds.
+
+Result: 0.00826962266496371 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "danger_time": R{"danger"}=? [ F "down" ]
+Model constants: MAX_COUNT=2
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2566, inf = 0, maybe = 912
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=7356] [344.8 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [22.8 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=25, compact] [7.0 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [435.8 KB]
+
+Starting iterations...
+
+Jacobi: 570 iterations in 0.05 seconds (average 0.000037, setup 0.03)
+
+Value in the initial state: 0.2931708835539748
+
+Time for model checking: 0.049 seconds.
+
+Result: 0.2931708835539748 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "down_T": R{"down"}=? [ C<=(T*3600) ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1535] [72.0 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [60.6 KB]
+Creating vector for diagonals... [dist=68, compact] [7.3 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [221.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.28 seconds (average 0.000067, setup 0.00)
+
+Value in the initial state: 0.028029015378783127
+
+Time for model checking: 0.284 seconds.
+
+Result: 0.028029015378783127 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "failure_T": P=? [ F<=(T*3600) "down" ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 912 of 3478 (26.2%)
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1050] [49.2 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [21.6 KB]
+Creating vector for diagonals... [dist=35, compact] [7.1 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [159.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.16 seconds (average 0.000039, setup 0.00)
+
+Value in the initial state: 0.009035237301280061
+
+Time for model checking: 0.164 seconds.
+
+Result: 0.009035237301280061 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "io": P=? [ !"down" U "fail_io" ]
+Model constants: MAX_COUNT=2
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 7 iterations in 0.00 seconds (average 0.000286, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 845, no = 1721, maybe = 912
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=7356] [344.8 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [22.8 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=2, compact] [6.8 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [435.6 KB]
+
+Starting iterations...
+
+Jacobi: 575 iterations in 0.04 seconds (average 0.000033, setup 0.03)
+
+Value in the initial state: 0.24250843827366916
+
+Time for model checking: 0.051 seconds.
+
+Result: 0.24250843827366916 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "io_T": P=? [ !"down" U<=(T*3600) "fail_io" ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 912 of 3478 (26.2%)
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1050] [49.2 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [21.6 KB]
+Creating vector for diagonals... [dist=35, compact] [7.1 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [159.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.16 seconds (average 0.000038, setup 0.00)
+
+Value in the initial state: 0.006797071997091224
+
+Time for model checking: 0.163 seconds.
+
+Result: 0.006797071997091224 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "main": P=? [ !"down" U "fail_main" ]
+Model constants: MAX_COUNT=2
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 6 iterations in 0.00 seconds (average 0.000167, setup 0.00)
+
+yes = 1901, no = 665, maybe = 912
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=7356] [344.8 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [22.8 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=2, compact] [6.8 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [435.6 KB]
+
+Starting iterations...
+
+Jacobi: 572 iterations in 0.05 seconds (average 0.000038, setup 0.02)
+
+Value in the initial state: 0.04841519185210501
+
+Time for model checking: 0.05 seconds.
+
+Result: 0.04841519185210501 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "main_T": P=? [ !"down" U<=(T*3600) "fail_main" ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 912 of 3478 (26.2%)
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1050] [49.2 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [21.6 KB]
+Creating vector for diagonals... [dist=35, compact] [7.1 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [159.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.15 seconds (average 0.000037, setup 0.00)
+
+Value in the initial state: 0.0013638819001886278
+
+Time for model checking: 0.163 seconds.
+
+Result: 0.0013638819001886278 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "sensors": P=? [ !"down" U "fail_sensors" ]
+Model constants: MAX_COUNT=2
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 4 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 434, no = 2660, maybe = 384
+
+Computing remaining probabilities...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=4995] [234.1 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [14.1 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=2, compact] [6.8 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [316.2 KB]
+
+Starting iterations...
+
+Jacobi: 605 iterations in 0.03 seconds (average 0.000033, setup 0.01)
+
+Value in the initial state: 0.6213536649249723
+
+Time for model checking: 0.033 seconds.
+
+Result: 0.6213536649249723 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "sensors_T": P=? [ !"down" U<=(T*3600) "fail_sensors" ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing probabilities...
+Engine: Hybrid
+
+Number of non-absorbing states: 912 of 3478 (26.2%)
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1050] [49.2 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [21.6 KB]
+Creating vector for diagonals... [dist=35, compact] [7.1 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [159.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.16 seconds (average 0.000038, setup 0.00)
+
+Value in the initial state: 8.058411395771991E-4
+
+Time for model checking: 0.163 seconds.
+
+Result: 8.058411395771991E-4 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "up_T": R{"up"}=? [ C<=(T*3600) ]
+Model constants: MAX_COUNT=2
+Property constants: T=12
+
+Computing rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=1535] [72.0 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [60.6 KB]
+Creating vector for diagonals... [dist=68, compact] [7.3 KB]
+Allocating iteration vectors... [3 x 27.2 KB]
+TOTAL: [221.4 KB]
+
+Uniformisation: q.t = 0.085002 x 43200.000000 = 3672.072192
+Fox-Glynn: left = 3245, right = 4188
+
+Starting iterations...
+
+Iterative method: 4188 iterations in 0.51 seconds (average 0.000121, setup 0.00)
+
+Value in the initial state: 11.96370136195656
+
+Time for model checking: 0.511 seconds.
+
+Result: 11.96370136195656 (value in the initial state)
+
+---------------------------------------------------------------------
+
+Model checking: "up_time": R{"up"}=? [ F "down" ]
+Model constants: MAX_COUNT=2
+
+Diagonals vector: 551 nodes (69 terminal), 3478 minterms
+Embedded Markov chain: 9286 nodes (309 terminal), 14639 minterms
+
+Prob0: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Prob1: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 2566, inf = 0, maybe = 912
+
+Computing remaining rewards...
+Engine: Hybrid
+
+Building hybrid MTBDD matrix... [levels=14, nodes=7356] [344.8 KB]
+Adding explicit sparse matrices... [levels=14, num=1, compact] [22.8 KB]
+Creating vector for diagonals... [dist=5, compact] [6.8 KB]
+Creating vector for RHS... [dist=20, compact] [6.9 KB]
+Allocating iteration vectors... [2 x 27.2 KB]
+TOTAL: [435.7 KB]
+
+Starting iterations...
+
+Jacobi: 572 iterations in 0.05 seconds (average 0.000031, setup 0.03)
+
+Value in the initial state: 423.8239100479889
+
+Time for model checking: 0.048 seconds.
+
+Result: 423.8239100479889 (value in the initial state)
+

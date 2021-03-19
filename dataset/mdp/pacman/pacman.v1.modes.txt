@@ -1,0 +1,16 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+pacman.v1.jani:model: info: pacman is an MDP model and will be simulated as an MDP.
+pacman.v1.jani:variables[1]: info: Expanding variable "pMove" into 3 locations in automaton "arbiter".
+pacman.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+pacman.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+pacman.v1.jani:model: error: Encountered structural nondeterminism between down, left, right and up.
+
+Peak memory usage: 71 MB
+Analysis results for pacman.v1.jani
+Status:          Error
+Simulation time: 0.2 s
+

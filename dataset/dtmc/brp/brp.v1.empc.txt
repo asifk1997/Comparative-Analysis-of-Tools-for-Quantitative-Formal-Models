@@ -1,0 +1,43 @@
+[1615999646776] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999646776] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1615999646939] Starting model checking...
+[1615999646939] Analysing property p1
+[1615999646955] Starting to compute JANI explorer...
+[1615999647077] Starting to build initial states of JANI explorer...
+[1615999647084] Done building initial states of JANI explorer
+[1615999647085] Done building JANI explorer
+[1615999647093] Starting to build model...
+[1615999647122] Building model done. 14 states. Time for model exploration: 0 seconds.
+[1615999647163] Starting iteration...
+[1615999647257] Done. Did 1 iterations in 0 seconds.
+[1615999647267] 1 states fulfilling filter "initial"
+[1615999647267] Printing all results for all states fulfilling states filter
+[1615999647274] 0:0=0.0000000
+[1615999647286] Analysing property p2
+[1615999647287] Starting to compute JANI explorer...
+[1615999647302] Starting to build initial states of JANI explorer...
+[1615999647305] Done building initial states of JANI explorer
+[1615999647305] Done building JANI explorer
+[1615999647305] Starting to build model...
+[1615999647310] Building model done. 14 states. Time for model exploration: 0 seconds.
+[1615999647312] Starting iteration...
+[1615999647313] Done. Did 1 iterations in 0 seconds.
+[1615999647313] 1 states fulfilling filter "initial"
+[1615999647314] Printing all results for all states fulfilling states filter
+[1615999647314] 0:0=0.0000000
+[1615999647314] Analysing property p4
+[1615999647316] Starting to compute JANI explorer...
+[1615999647328] Starting to build initial states of JANI explorer...
+[1615999647331] Done building initial states of JANI explorer
+[1615999647331] Done building JANI explorer
+[1615999647331] Starting to build model...
+[1615999647335] Building model done. 14 states. Time for model exploration: 0 seconds.
+[1615999647336] Starting iteration...
+[1615999647337] Done. Did 1 iterations in 0 seconds.
+[1615999647338] 1 states fulfilling filter "initial"
+[1615999647338] Printing all results for all states fulfilling states filter
+[1615999647338] 0:0=0.0000000
+[1615999647338] Finished model checking. Time required: 0 seconds
+[1615999647346] p1: 0.0000000
+[1615999647346] p2: 0.0000000
+[1615999647347] p4: 0.0000000

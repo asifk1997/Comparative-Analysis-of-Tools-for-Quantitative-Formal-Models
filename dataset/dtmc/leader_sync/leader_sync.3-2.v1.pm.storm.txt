@@ -1,0 +1,36 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Thu Mar 18 21:27:25 2021
+Command line arguments: --prism /home/asif/dataset/dtmc/leader_sync/leader_sync.3-2.v1.prism --timemem --prop /home/asif/dataset/dtmc/leader_sync/leader_sync.v1.props -pc
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.106s.
+
+Time for model construction: 0.044s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	26
+Transitions: 	33
+Reward Models:  num_rounds
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * elected -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "eventually_elected": P>=1 [F "elected"] ...
+Result (for initial states): true
+
+Time for model checking: 0.000s.
+
+Model checking property "time": R[exp]{"num_rounds"}=? [F "elected"] ...
+Result (for initial states): 1.333333333
+Time for model checking: 0.002s.
+
+Performance statistics:
+  * peak memory usage: 148MB
+  * CPU time: 0.231s
+  * wallclock time: 0.186s

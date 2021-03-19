@@ -1,0 +1,33 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+philosophers-mdp.3.v1.jani:model: info: philosophers-mdp.3 is an MDP model.
+philosophers-mdp.3.v1.jani:variables[0]: info: Expanding variable "p1" into 12 locations in automaton "phil1".
+philosophers-mdp.3.v1.jani:variables[1]: info: Expanding variable "p2" into 12 locations in automaton "phil2".
+philosophers-mdp.3.v1.jani:variables[2]: info: Expanding variable "p3" into 12 locations in automaton "phil3".
+philosophers-mdp.3.v1.jani: info: Need 8 bytes per state.
+philosophers-mdp.3.v1.jani: info: Explored 440 states.
+
+Peak memory usage: 53 MB
+Analysis results for philosophers-mdp.3.v1.jani
+
++ State space exploration
+  State size:  8 bytes
+  States:      440
+  Transitions: 1239
+  Branches:    1404
+  Rate:        8800 states/s
+  Time:        0.1 s
+
++ Property eat
+  Probability: 1
+  Bounds:      [1, 1]
+  Time:        0.1 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  3
+    Time:        0.0 s
+

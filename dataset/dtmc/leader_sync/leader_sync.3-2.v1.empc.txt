@@ -1,0 +1,30 @@
+[1615999645461] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999645462] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1615999645627] Starting model checking...
+[1615999645627] Analysing property eventually_elected
+[1615999645644] Starting to compute JANI explorer...
+[1615999645775] Starting to build initial states of JANI explorer...
+[1615999645780] Done building initial states of JANI explorer
+[1615999645781] Done building JANI explorer
+[1615999645790] Starting to build model...
+[1615999645822] Building model done. 26 states. Time for model exploration: 0 seconds.
+[1615999645860] Starting iteration...
+[1615999645951] Done. Did 55 iterations in 0 seconds.
+[1615999645964] 1 states fulfilling filter "initial"
+[1615999645964] Printing all results for all states fulfilling states filter
+[1615999645969] 0:0=true
+[1615999645976] Analysing property time
+[1615999645978] Starting to compute JANI explorer...
+[1615999645997] Starting to build initial states of JANI explorer...
+[1615999645999] Done building initial states of JANI explorer
+[1615999645999] Done building JANI explorer
+[1615999645999] Starting to build model...
+[1615999646005] Building model done. 26 states. Time for model exploration: 0 seconds.
+[1615999646011] Starting iteration...
+[1615999646013] Done. Did 55 iterations in 0 seconds.
+[1615999646014] 1 states fulfilling filter "initial"
+[1615999646014] Printing all results for all states fulfilling states filter
+[1615999646014] 0:0=1.3333333
+[1615999646018] Finished model checking. Time required: 0 seconds
+[1615999646024] eventually_elected: true
+[1615999646025] time: 1.3333333

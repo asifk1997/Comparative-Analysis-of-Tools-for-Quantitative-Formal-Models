@@ -1,0 +1,80 @@
+[1616089820412] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1616089820412] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1616089820451] Starting to parse PRISM model...
+[1616089820764] Done parsing PRISM model
+[1616089820785] Starting model checking...
+[1616089820785] Analysing property messagesA
+[1616089820925] Starting to compute JANI explorer...
+[1616089821646] Starting to build initial states of JANI explorer...
+[1616089821657] Done building initial states of JANI explorer
+[1616089821658] Done building JANI explorer
+[1616089821667] Starting to build model...
+[1616089822663] Current number of states: 3,527; states/second: 3,527
+[1616089823666] Current number of states: 7,756; states/second: 4,229
+[1616089824666] Current number of states: 11,993; states/second: 4,237
+[1616089825666] Current number of states: 16,291; states/second: 4,298
+[1616089826666] Current number of states: 20,545; states/second: 4,254
+[1616089827667] Current number of states: 24,925; states/second: 4,380
+[1616089828668] Current number of states: 29,325; states/second: 4,400
+[1616089829669] Current number of states: 33,612; states/second: 4,287
+[1616089829711] Building model done. 33,790 states. Time for model exploration: 8 seconds.
+[1616089829961] Starting iteration...
+[1616089830055] Done. Did 43 iterations in 0 seconds.
+[1616089830063] Analysing property messagesB
+[1616089830074] Starting to compute JANI explorer...
+[1616089830488] Starting to build initial states of JANI explorer...
+[1616089830492] Done building initial states of JANI explorer
+[1616089830493] Done building JANI explorer
+[1616089830493] Starting to build model...
+[1616089831493] Current number of states: 4,455; states/second: 4,455
+[1616089832494] Current number of states: 8,856; states/second: 4,401
+[1616089833494] Current number of states: 13,079; states/second: 4,223
+[1616089834494] Current number of states: 17,554; states/second: 4,475
+[1616089835495] Current number of states: 21,957; states/second: 4,403
+[1616089836495] Current number of states: 26,470; states/second: 4,513
+[1616089837496] Current number of states: 30,800; states/second: 4,330
+[1616089838180] Building model done. 33,790 states. Time for model exploration: 7 seconds.
+[1616089838288] Starting iteration...
+[1616089838293] Done. Did 37 iterations in 0 seconds.
+[1616089838301] Analysing property unfairA
+[1616089838316] Starting to compute JANI explorer...
+[1616089838643] Starting to build initial states of JANI explorer...
+[1616089838646] Done building initial states of JANI explorer
+[1616089838646] Done building JANI explorer
+[1616089838647] Starting to build model...
+[1616089839647] Current number of states: 3,436; states/second: 3,436
+[1616089840647] Current number of states: 6,763; states/second: 3,327
+[1616089841648] Current number of states: 9,981; states/second: 3,218
+[1616089842648] Current number of states: 13,397; states/second: 3,416
+[1616089843648] Current number of states: 16,814; states/second: 3,417
+[1616089844649] Current number of states: 20,460; states/second: 3,646
+[1616089845649] Current number of states: 24,089; states/second: 3,629
+[1616089846650] Current number of states: 27,799; states/second: 3,710
+[1616089847650] Current number of states: 31,442; states/second: 3,643
+[1616089848437] Building model done. 33,790 states. Time for model exploration: 9 seconds.
+[1616089849167] Starting iteration...
+[1616089849174] Done. Did 42 iterations in 0 seconds.
+[1616089849180] Analysing property unfairB
+[1616089849190] Starting to compute JANI explorer...
+[1616089849504] Starting to build initial states of JANI explorer...
+[1616089849508] Done building initial states of JANI explorer
+[1616089849508] Done building JANI explorer
+[1616089849508] Starting to build model...
+[1616089850508] Current number of states: 3,601; states/second: 3,601
+[1616089851509] Current number of states: 7,083; states/second: 3,482
+[1616089852509] Current number of states: 10,105; states/second: 3,022
+[1616089853510] Current number of states: 13,540; states/second: 3,435
+[1616089854510] Current number of states: 16,649; states/second: 3,109
+[1616089855511] Current number of states: 19,935; states/second: 3,286
+[1616089856511] Current number of states: 23,469; states/second: 3,534
+[1616089857511] Current number of states: 27,087; states/second: 3,618
+[1616089858512] Current number of states: 30,641; states/second: 3,554
+[1616089859512] Current number of states: 33,673; states/second: 3,032
+[1616089859545] Building model done. 33,790 states. Time for model exploration: 10 seconds.
+[1616089860203] Starting iteration...
+[1616089860206] Done. Did 27 iterations in 0 seconds.
+[1616089860210] Finished model checking. Time required: 39 seconds
+[1616089860216] messagesA: 1.1513672
+[1616089860216] messagesB: 1.6826172
+[1616089860216] unfairA: 0.5156250
+[1616089860216] unfairB: 0.4843750

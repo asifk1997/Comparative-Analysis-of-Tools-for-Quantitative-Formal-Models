@@ -1,0 +1,50 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:28:13 2021
+Command line arguments: --jani /home/asif/dataset/ctmc/polling/polling.12.v1.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.052s.
+
+Time for model construction: 26.554s.
+
+-------------------------------------------------------------- 
+Model type: 	CTMC (sparse)
+States: 	73728
+Transitions: 	503808
+Reward Models:  waiting, served
+State Labels: 	6 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * ((s1 = 1) & !(((s = 1) & (a = 1)))) -> 35840 item(s)
+   * ((s = 1) & (a = 1)) -> 2048 item(s)
+   * ((s = 1) & (a = 0)) -> 4096 item(s)
+   * !(((s = 2) & (a = 1))) -> 71680 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "s1": LRAmin=? [((s1 = 1) & !(((s = 1) & (a = 1))))] ...
+Result (for initial states): 0.1363290009
+Time for model checking: 5.503s.
+
+Model checking property "s1_before_s2": Pmin=? [!(((s = 2) & (a = 1))) U ((s = 1) & (a = 1))] ...
+Result (for initial states): 0.5408099144
+Time for model checking: 1.099s.
+
+Model checking property "served": R[exp]{"served"}min=? [C<=16] ...
+Result (for initial states): 0.9394469524
+Time for model checking: 74.891s.
+
+Model checking property "station1_polled": Pmin=? [true U<=16 ((s = 1) & (a = 0))] ...
+Result (for initial states): 1
+Time for model checking: 67.624s.
+
+Model checking property "waiting": R[exp]{"waiting"}min=? [C<=16] ...
+Result (for initial states): 1.461110303
+Time for model checking: 75.012s.
+
+Performance statistics:
+  * peak memory usage: 193MB
+  * CPU time: 251.051s
+  * wallclock time: 250.950s

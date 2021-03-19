@@ -1,0 +1,92 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+firewire.false.v2.jani:model: info: firewire.false is an MDP model.
+firewire.false.v2.jani:variables[7]: info: Expanding variable "s1" into 9 locations in automaton "node1".
+firewire.false.v2.jani:variables[8]: info: Expanding variable "w21" into 10 locations in automaton "wire21".
+firewire.false.v2.jani:variables[12]: info: Expanding variable "s2" into 9 locations in automaton "node2".
+firewire.false.v2.jani: info: Need 16 bytes per state.
+firewire.false.v2.jani: info: Explored 4093 states.
+firewire.false.v2.jani:properties[2]: warning: Computing minimum expected reward in property "time_min" without checking for zero-reward end components.
+
+Peak memory usage: 56 MB
+Analysis results for firewire.false.v2.jani
+
++ State space exploration
+  State size:  16 bytes
+  States:      4093
+  Transitions: 5515
+  Branches:    5581
+  Rate:        63953 states/s
+  Time:        0.1 s
+
++ Property elected
+  Result:      True
+  Time:        0.1 s
+  Probability: 1
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          4093
+    Time for min. prob. 1 states: 0.0 s
+
++ Property time_max
+  Value:  298.9999997790728
+  Bounds: [298.9999997790728, infinity)
+  Time:   0.1 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          4093
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 8.183677391972505E-07
+    Iterations:  58
+    Time:        0.0 s
+
++ Property time_min
+  Value:  138.25
+  Bounds: [138.25, infinity)
+  Time:   0.1 s
+
+  + Precomputations
+    Max. prob. 1 states:          4093
+    Time for max. prob. 1 states: 0.1 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  6
+    Time:        0.0 s
+
++ Property time_sending
+  Value:  17.999992668628693
+  Bounds: [17.999992668628693, infinity)
+  Time:   0.1 s
+
+  + Precomputations
+    Min. prob. 0 states:          0
+    Time for min. prob. 0 states: 0.0 s
+    Min. prob. 1 states:          4093
+    Time for min. prob. 1 states: 0.0 s
+
+  + Value iteration
+    Final error: 9.903558414562076E-07
+    Iterations:  42
+    Time:        0.0 s
+
++ Property deadline
+  Probability: 0.5
+  Bounds:      [0.5, 1]
+  CDF:         { (0, 0), ..., (169, 0), (170, 0.5), ..., (200, 0.5) }
+  Time:        0.2 s
+
+  + Value iteration
+    Final error: 0
+    Iterations:  434
+    Time:        0.2 s
+

@@ -1,0 +1,67 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+egl.v1.jani:model: info: egl is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+egl.v1.jani: info: Using default value of 0.95 for the confidence parameter.
+egl.v1.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+egl.v1.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+
+Peak memory usage: 59 MB
+Analysis results for egl.v1.jani
+Status:          Finished
+Simulation time: 7.0 s
+
++ Properties "messagesA", "messagesB", "unfairA" and "unfairB"
+  Run type: MDP
+  Status:   Finished
+
+  + Property Property "messagesA"
+    Estimated value:     1.153316547328643
+    Confidence interval: [1.1433165579799571, 1.163316536677329]
+    Runs used:           127090
+
+    + Sample data
+      Mean:     1.153316547328643
+      Variance: 3.308371511895563
+      Skewness: 3.000732845949819
+      Kurtosis: 14.924516278799755
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+
+  + Property Property "messagesB"
+    Estimated value:     1.6772045774432662
+    Confidence interval: [1.6672047977666855, 1.687204357119847]
+    Runs used:           163410
+
+    + Sample data
+      Mean:     1.6772045774432662
+      Variance: 4.253665263547192
+      Skewness: 1.0638619577242405
+      Kurtosis: 3.9216189981644836
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions)
+      α:         0.050000000000000044
+
+  + Property Property "unfairA"
+    Estimated probability: 0.5190347071583514
+    Runs used:             18440
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+
+  + Property Property "unfairB"
+    Estimated probability: 0.4809652928416486
+    Runs used:             18440
+
+    + Error bounds
+      Statement: Adaptive: P(error > ε) < δ
+      ε:         0.01
+      δ:         0.050000000000000044
+

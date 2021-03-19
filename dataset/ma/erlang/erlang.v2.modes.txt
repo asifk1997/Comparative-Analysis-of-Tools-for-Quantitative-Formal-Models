@@ -1,0 +1,17 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.75-gcc6169502.
+
+
+
+
+erlang.v2.jani:model: info: erlang is an MA model and will be simulated as an MA.
+erlang.v2.jani: info: Using default value of 0.95 for the confidence parameter.
+erlang.v2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+erlang.v2.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+erlang.v2.jani:properties[3]: warning: Ignoring property "SmaxNotReach" because the transient or evaluation duration for long-run average value simulation is not configured.
+erlang.v2.jani:model: error: Encountered structural nondeterminism between a and b.
+
+Peak memory usage: 55 MB
+Analysis results for erlang.v2.jani
+Status:          Error
+Simulation time: 0.2 s
+

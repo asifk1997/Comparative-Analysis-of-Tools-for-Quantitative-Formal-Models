@@ -1,0 +1,63 @@
+[1615999669291] Running EPMC revision df0f89c42d066118f8258ec42a231bdc58bfaa8f
+[1615999669291] Assertions are disabled. In case of incorrect results or otherwise strange behaviour, please run the JVM with "-ea" parameter.
+[1615999669504] Starting model checking...
+[1615999669505] Analysing property s1
+[1615999669521] Starting to compute JANI explorer...
+[1615999669669] Starting to build initial states of JANI explorer...
+[1615999669676] Done building initial states of JANI explorer
+[1615999669677] Done building JANI explorer
+[1615999669686] Starting to build model...
+[1615999669719] Building model done. 12 states. Time for model exploration: 0 seconds.
+[1615999669758] Starting iteration...
+[1615999669857] Done. Did 1 iterations in 0 seconds.
+[1615999669869] 1 states fulfilling filter "initial"
+[1615999669869] Printing all results for all states fulfilling states filter
+[1615999669875] 0:0=0.0000000
+[1615999669886] Analysing property s1_before_s2
+[1615999669888] Starting to compute JANI explorer...
+[1615999669918] Starting to build initial states of JANI explorer...
+[1615999669922] Done building initial states of JANI explorer
+[1615999669922] Done building JANI explorer
+[1615999669923] Starting to build model...
+[1615999669929] Building model done. 12 states. Time for model exploration: 0 seconds.
+[1615999669933] Starting iteration...
+[1615999669935] Done. Did 1 iterations in 0 seconds.
+[1615999669938] 1 states fulfilling filter "initial"
+[1615999669938] Printing all results for all states fulfilling states filter
+[1615999669938] 0:0=0.0000000
+[1615999669939] Analysing property served
+[1615999669940] Starting to compute JANI explorer...
+[1615999669978] Starting to build initial states of JANI explorer...
+[1615999669984] Done building initial states of JANI explorer
+[1615999669984] Done building JANI explorer
+[1615999669984] Starting to build model...
+[1615999669990] Building model done. 12 states. Time for model exploration: 0 seconds.
+[1615999670016] 1 states fulfilling filter "initial"
+[1615999670016] Printing all results for all states fulfilling states filter
+[1615999670016] 0:0=0.0000000
+[1615999670017] Analysing property station1_polled
+[1615999670017] Starting to compute JANI explorer...
+[1615999670039] Starting to build initial states of JANI explorer...
+[1615999670043] Done building initial states of JANI explorer
+[1615999670043] Done building JANI explorer
+[1615999670043] Starting to build model...
+[1615999670047] Building model done. 12 states. Time for model exploration: 0 seconds.
+[1615999670055] 1 states fulfilling filter "initial"
+[1615999670055] Printing all results for all states fulfilling states filter
+[1615999670056] 0:0=1.0000000
+[1615999670056] Analysing property waiting
+[1615999670057] Starting to compute JANI explorer...
+[1615999670077] Starting to build initial states of JANI explorer...
+[1615999670080] Done building initial states of JANI explorer
+[1615999670080] Done building JANI explorer
+[1615999670080] Starting to build model...
+[1615999670084] Building model done. 12 states. Time for model exploration: 0 seconds.
+[1615999670089] 1 states fulfilling filter "initial"
+[1615999670089] Printing all results for all states fulfilling states filter
+[1615999670089] 0:0=0.0000000
+[1615999670090] Finished model checking. Time required: 0 seconds
+[1615999670096] s1: 0.0000000
+[1615999670096] s1_before_s2: 0.0000000
+[1615999670097] served: 0.0000000
+[1615999670097] station1_polled: 1.0000000
+[1615999670097] waiting: 0.0000000

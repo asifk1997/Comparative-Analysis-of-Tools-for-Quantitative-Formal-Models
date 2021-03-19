@@ -1,0 +1,45 @@
+Storm 1.6.4 (dev)
+DEBUG BUILD
+
+Date: Fri Mar 19 01:20:28 2021
+Command line arguments: --jani /home/asif/dataset/dtmc/egl/egl.v1.jani --timemem --janiproperty
+Current working directory: /home/asif/PycharmProjects/PECSS
+
+Time for model input parsing: 0.093s.
+
+Time for model construction: 6.637s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	33790
+Transitions: 	34813
+Reward Models:  messages_B_needs, messages_A_needs
+State Labels: 	5 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * knowB -> 17631 item(s)
+   * knowA -> 19023 item(s)
+   * (phase = 4) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "messagesA": R[exp]{"messages_A_needs"}min=? [F (phase = 4)] ...
+Result (for initial states): 1.151367188
+Time for model checking: 0.103s.
+
+Model checking property "messagesB": R[exp]{"messages_B_needs"}min=? [F (phase = 4)] ...
+Result (for initial states): 1.682617188
+Time for model checking: 0.098s.
+
+Model checking property "unfairA": Pmin=? [F (!("knowA") & "knowB")] ...
+Result (for initial states): 0.515625
+Time for model checking: 0.020s.
+
+Model checking property "unfairB": Pmin=? [F (!("knowB") & "knowA")] ...
+Result (for initial states): 0.484375
+Time for model checking: 0.019s.
+
+Performance statistics:
+  * peak memory usage: 130MB
+  * CPU time: 7.039s
+  * wallclock time: 7.017s
