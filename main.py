@@ -68,6 +68,8 @@ def run_prism_on_epmc(file_path):
 
 def run_jani_on_mcsta(file_path):
     print(file_path)
+    if file_path.count("cluster")==0:
+        return
     # pathh = Path(file_path)
     # constants_file_path = os.path.join(pathh.parent.absolute(), "constants.txt")
     # constants_file = open(constants_file_path, "r")
@@ -156,7 +158,7 @@ def run_tools(file_path):
         # run_jani_on_storm(file_path)
         # run_jani_on_epmc(file_path)
         run_jani_on_mcsta(file_path)
-        run_jani_on_modes(file_path)
+        # run_jani_on_modes(file_path)
         pass
     elif "prism" in file_path:
         # run_prism_on_storm(file_path)
@@ -164,8 +166,8 @@ def run_tools(file_path):
         # run_prism_on_epmc(file_path)
         pass
     elif "modest" in file_path:
-        run_modest_on_mcsta(file_path)
-        run_modest_on_modes(file_path)
+        # run_modest_on_mcsta(file_path)
+        # run_modest_on_modes(file_path)
         pass
 
 

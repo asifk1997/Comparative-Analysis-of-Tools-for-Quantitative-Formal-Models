@@ -20,15 +20,15 @@ Analysis results for cluster.v1.jani
   States:      276
   Transitions: 276
   Branches:    1120
-  Rate:        5872 states/s
+  Rate:        5208 states/s
   Time:        0.1 s
 
 + Property premium_steady
   Value: 0.9999615572794057
-  Time:  0.4 s
+  Time:  0.3 s
 
   + LongRunAverage
-    Time:                   0.1892065
+    Time:                   0.1795155
     Max. end components:    1
     Max. exit rate:         50.004
     Min. exit rate:         0.008700000000000001
@@ -40,14 +40,14 @@ Analysis results for cluster.v1.jani
 + Property qos1
   Probability: 0.0011833955752456522
   Bounds:      [0.0011583955752456708, 0.0012083955752456338]
-  Time:        17.0 s
+  Time:        24.4 s
 
   + Precomputations
     Min. prob. 0 states:          0
     Time for min. prob. 0 states: 0.0 s
 
   + Unif+
-    Time:             17.0 s
+    Time:             24.4 s
     Max. exit rate:   50.004
     Iterations:       1
     Final unif. rate: 50.004

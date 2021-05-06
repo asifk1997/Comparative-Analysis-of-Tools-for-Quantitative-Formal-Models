@@ -1,0 +1,50 @@
+Result Value,,,,,,,,Time taken,,,,,
+,,,TOOL,,,,,,,,,,
+Type,FileName,Property,Storm,ePMC,Modes,MCSTA,PRISM,,Storm,ePMC,Modes,MCSTA,PRISM
+,,,,,,,,,,,,,
+CTMC,cluster.v1.jani,qos1,0.001158395575,ERROR,0.001639344262,0.001183395575,,,2.177,ERROR,Doesnt show individual property time,17,
+CTMC,cluster.v1.prism,qos1,0.001158395575,0.0011584,,,0.001158395575,,2.163,0.03,,,0.402
+CTMC,embedded.v1.jani ,actuators,0.0876781904,ERROR,ERROR,0.08629993239,,,0.017,ERROR,,6.4,
+CTMC,embedded.v1.prism,actuators,0.0876781904,0.0876767,,,0.08767396095,,0.017,1.916,,,0.04
+CTMC,fms.v1.jani,productivity,13.85491073,ERROR,INCOMPATIBLE,39.6272914,,,0.003,ERROR,,0.2,
+CTMC,fms.v1.prism,productivity,13.85491073,13.8531283,,,13.85313042,,0.003,0.416,,,0.009
+CTMC,kanban.v1.jani,throughput,0.1738717086,INCOMPATIBLE,ERROR,0.4789876176,,,0.171,0.327,,0.5,
+CTMC,kanban.v1.prism,throughput,0.1738717086,0.1738717,,,ERROR,,0.173,1.146,,,ERROR
+CTMC,polling.12.v1.jani,s1_before_s2,0.5408099144,0,0.5368298368,0.5407870133,,,1.099,0.052,,2.2,
+CTMC,polling.12.v1.prism,s1_before_s2,0.5408099144,0.5408111, ,,0.540540701,,1.076,7.128,,,5.342
+DTMC,brp.v1.jani ,p1,0.0004233334438,0,0,0.0004233334405,,,0.003,0.335,,0.2,
+DTMC,brp.v1.prism ,p1,0.0004233334438,0.0004233,,,4.23E-04,,0.003,0.417,,,0.045
+DTMC,crowds.v1.jani,positive,0.0529625351,0,0.06140724947,0.05296247554,,,0.007,0.341,,0.2,
+DTMC,crowds.v1.prism,positive,0.0529625351,0.0529625,,,0.05296233935,,0.006,0.648,,,0.018
+DTMC,egl.v1.jani,messagesA,1.151367188,ERROR,1.153316547,1.151367188,,,0.103,ERROR,,0.2,
+DTMC,egl.v1.prism,messagesA,1.151367188,1.1513672,,,1.151367188,,0.116,9.27,,,0.162
+DTMC,herman.3.v1.jani,steps,1.333333333,INCOMPATIBLE,INCOMPATIBLE,INCOMPATIBLE,,,0.002,INCOMPATIBLE,,INCOMPATIBLE,
+DTMC,herman.3.v1.prism,steps,1.333333333,1.3333333,,,1.333333276,,0.002,0.345,,,0.003
+DTMC,leader_sync.3-2.v1.jani ,time,1.333333333,1.3333333,1.338295388,1.333333254,,,0.002,0.038,,0.3,
+DTMC,leader_sync.3-2.v1.prism,time,1.333333333,1.3333333,,,1.333333015,,0.002,0.119,,,0.004
+MA,bitcoin-attack.v1.jani ,T_MWinMin,3737.13401,INCOMPATIBLE,ERROR,3736.047847,,,0.07,INCOMPATIBLE,,0.2,
+MA,bitcoin-attack.v1.modest,T_MWinMin,,,ERROR,3736.047847,,,,,,0.2,
+MA,breakdown-queues.v2.jani,Min,0.02800482792,INCOMPATIBLE,ERROR,0.02800482792,,,0.07,INCOMPATIBLE,,0.1,
+MA,breakdown-queues.v2.modest,Min,,,ERROR,0.02800482792,,,,,,0.1,
+MA,dpm.v2.jani,PminQueuesFull,0.004322771574,ERROR,ERROR,0.004322771574,,,0.273,ERROR,,0.2,
+MA,dpm.v2.modest,PminQueuesFull,,,ERROR,ERROR,,,,,,ERROR,
+MA,erlang.v2.jani,PminReach,0.5,INCOMPATIBLE,INCOMPATIBLE,ERROR,,,0.02,INCOMPATIBLE,,ERROR,
+MA,erlang.v2.modest,PminReach,,,ERROR,ERROR,,,,,,ERROR,
+MA,ftwc.v3.jani,TimeMax,1933087.545,INCOMPATIBLE,ERROR,1933064.427,,,22.266,INCOMPATIBLE,,18.2,
+MA,ftwc.v3.modest,TimeMax,,,ERROR,ERROR,,,,,,ERROR,
+MDP,consensus.2.v1.jani,c2,0.4842482944,INCOMPATIBLE,ERROR,0.4842577007,,,1.432,INCOMPATIBLE,,0.4,
+MDP,consensus.2.v1.prism,c2,0.4842482944,0.484375,,,ERROR,,1.437,0.86,,,ERROR
+MDP,csma.2-2.v1.jani,all_before_max,0.875,0,ERROR,0.8749999999,,,0.004,0.409,,0,
+MDP,csma.2-2.v1.prism,all_before_max,0.875,0.875,,,0.875,,0.004,0.528,,,0.122
+MDP,firewire.false.v2.jani,time_max,298.9999997,299,ERROR,298.9999998,,,0.05,0.584,,0.1,
+MDP,firewire.false.v2.prism,time_max,298.9999958,ERROR,,,ERROR,,0.046,ERROR,,,ERROR
+MDP,pacman.v1.jani,crash,0.5511,ERROR,ERROR,0.5511,,,0.002,ERROR,,0.1,
+MDP,pacman.v1.prism,crash,0.5511,0.5511,,,0.5511,,0.002,1.055,,,0.014
+MDP,philosophers-mdp.3.v1.jani,eat,1,0,ERROR,1,,,0.001,0.387,,0.1,
+MDP,philosophers-mdp.3.v1.prism,eat,1,1,,,1,,0.001,0.457,,,0.007
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+NOTE,prism tool need to converge in deafult mode before 10000 iterations else it throws error.,,,,,,,,,,,,
+,ePMC if value is zero then there is problem of file incorrectly reading therefore those results are not legit.,,,,,,,,,,,,
